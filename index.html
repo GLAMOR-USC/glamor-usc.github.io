@@ -1,0 +1,350 @@
+<html>
+
+<head>
+	<title>GLAMOR Lab</title>
+
+	<!-- This block only during dev -->
+	<!--
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	-->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <base href="/">
+
+    <!-- Previously style.css -->
+    <style>
+    	#container, #container {
+			text-align:center;
+		}
+
+		.table {
+			align:center;
+		}
+
+		.table>tbody>tr>td,
+		.table>tbody>tr>th {
+		  border-top: none;
+		  border-bottom: none;
+		}
+
+		.centering {
+			text-align: center;
+			vertical-align: center;
+		}
+
+		a:link { 
+			text-decoration: none; 
+		}
+
+		h6 a:link {
+		  color: #990000;
+		}
+	</style>
+
+	<!-- Previously desktop.css -->
+	<style>
+		#container, #container {
+			padding: 2em 2em 4em;
+			margin: 0 auto;
+			font-size:16px;
+			min-width: 900px;
+			max-width: 900px;
+		}
+
+		.table-sm{
+			font-size:20px;
+		}
+		h1{
+			font-size:66px;
+		}
+		h2{
+			font-size:54px;
+		}
+		h3{
+			font-size:42px;
+		}
+		h4{
+			font-size:36px;
+		}
+		h5{
+			font-size:24px;
+		}
+		h6{
+			font-size:20px;
+		}
+
+		.btn{
+			font-size:18px !important;
+		}
+
+		.fixed-td {
+			width: 120px;
+		}
+
+		.glamor-thumbnail {
+			height: 70px;
+		}
+
+		.tiny-thumbnail {
+			height: 32px;
+			padding: 2px;
+		}
+
+		.img-thumbnail {
+			width: 100px;
+			height: 100px;
+		}
+
+		.face-thumbnail {
+			width: 200px;
+			height: 200px;
+			padding: 10px;
+		}
+
+		.face-card {
+			width: 14rem;
+			height: 16rem;
+		}
+	</style>
+
+	<style>
+		.bib {
+			font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+			font-size: 12px;
+			padding: 8px 8px 8px 8px;
+			border-style: ridge;
+			background-color: aliceblue;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div id="container">
+
+	<div class="row"><div class="col-md-12">
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #990000;">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">
+	      <img class="glamor-thumbnail" src="thumbnails/glamor.png" alt="GLAMOR lab logo">
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#news"><h4 style="color:#FFC72C">News</h4></a>
+	        </li><h4 style="color:#FFC72C">&nbsp;|&nbsp;</h4>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#group"><h4 style="color:#FFC72C">Group</h4></a>
+	        </li><h4 style="color:#FFC72C">&nbsp;|&nbsp;</h4>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#opportunities"><h4 style="color:#FFC72C">Opportunities</h4></a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #990000;">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#" style="color:#FFC72C">
+	      <h5><b>G</b>rounding <b>L</b>anguage in <b>A</b>ctions, <b>M</b>ultimodal <b>O</b>bservations, and <b>R</b>obots</h5>
+	    </a>
+	  </div>
+	</nav>
+	</div></div>
+
+	</br>
+
+	<div class="row">
+		<div class="col-md-12">
+			<h4 style="color:#990000;">GLAMOR Lab</h4>
+			<p align="justify" style="font-size:20px">
+				We bring together <b>natural language processing and robotics</b> to connect language to the world (RoboNLP). Our lab is broadly interested in connecting language to agent perception and action, and lifelong learning through interaction.
+			</p>
+		</div>
+	</div>
+
+	<div class="row">
+
+	<a id="news"></a>
+	<div class="row">
+	<div class="col-md-12">
+
+		<table class="table-sm"><tr><td colspan="4"><h4>News</h4></td></tr>
+			<tr><td class="col-md-3"><b>Opportunity!</b><br/>&nbsp;&nbsp;REU<td class="col-md-5">Glass is to Shatter as Rubber is to Bounce: Analogies for Natural Language Processing</td><td class="col-md-2"><a class="btn btn-light" style="padding:5px;" href="#analogies_urap">details</a></td><td class="col-md-2">Fall 2022-Spring 2023</td></tr>
+			<tr><td class="col-md-3"><b>Robotics Ed Week</b><br/>&nbsp;&nbsp;Viterbi K-12 STEM Center<td class="col-md-5">Talking to Robots: Challenges for Communicating with Robots in Text</td><td class="col-md-2"><a class="btn btn-light" style="padding:5px;" href="https://viterbik12.usc.edu/robotics-ed-week/">website</a></td><td class="col-md-2">April 8, 2022</td></tr>
+		</table>
+	</div>
+	</div>
+
+	</br>
+
+	<a id="group"></a>
+	<div class="row">
+	<div class="col-md-12">
+		<h4 style="text-align:left">Group</h4>
+	</div>
+
+	<div class="row" style="text-align:left">
+
+	<div class="col-md-6">
+
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <a href="https://jessethomason.com/" target="_blank"><img src="glamor_photos/jesse.jpegm" class="img-fluid rounded-start" alt="Jesse Thomason"></a>
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Jesse Thomason</h5>
+		        <p class="card-text"><br/><br/>Principal Investigator</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <a href="https://terarachang.github.io/" target="_blank" onclick="captureOutboundLink('https://terarachang.github.io/');"><img src="glamor_photos/ting-yun.png" class="img-fluid rounded-start" alt="Ting-Yun (Charlotte) Chang"></a>
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Ting-Yun (Charlotte) Chang</h5>
+		        <p class="card-text">(co-<a href="https://robinjia.github.io/">Robin Jia</a>)<br/><br/>PhD Student</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <a href="https://aliang8.github.io/" target="_blank" onclick="captureOutboundLink('https://aliang8.github.io/');"><img src="glamor_photos/anthony.jpeg" class="img-fluid rounded-start" alt="Anthony Liang"></a>
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Anthony Liang</h5>
+		        <p class="card-text"><br/><br/>PhD Student</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <a href="https://ishikasingh.github.io/" target="_blank" onclick="captureOutboundLink('https://ishikasingh.github.io/');"><img src="glamor_photos/ishika.jpeg" class="img-fluid rounded-start" alt="Ishika Singh"></a>
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Ishika Singh</h5>
+		        <p class="card-text"><br/><br/>PhD Student</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row g-0">
+		    <div class="col-md-4 align-self-center">
+		      <a href="https://billzhu.me/" target="_blank" onclick="captureOutboundLink('https://billzhu.me/');"><img src="glamor_photos/bill.jpg" class="img-fluid rounded-start" alt="Wang (Bill) Zhu"></a>
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Wang (Bill) Zhu</h5>
+		        <p class="card-text">(co-<a href="https://robinjia.github.io/">Robin Jia</a>)<br/><br/>PhD Student</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
+
+	<div class="col-md-6">
+
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <a href="https://abraranwar.github.io/" target="_blank" onclick="captureOutboundLink('https://abraranwar.github.io/');"><img src="glamor_photos/abrar.png" class="img-fluid rounded-start" alt="Abrar Anwar"></a>
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Abrar Anwar</h5>
+		        <p class="card-text"><br/><br/>PhD Student</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <a href="https://leekezar.github.io/"><img src="glamor_photos/lee.jpeg" class="img-fluid rounded-start" alt="Lee Kezar"></a>
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Lee Kezar</h5>
+		        <p class="card-text"><br/><br/>PhD Student</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row g-0">
+		    <div class="col-md-4">
+		      <a href="https://leticiapinto.github.io/" target="_blank" onclick="captureOutboundLink('https://leticiapinto.github.io/');"><img src="glamor_photos/leticia.png" class="img-fluid rounded-start" alt="Leticia Pinto-Alva"></a>
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Leticia Pinto-Alva</h5>
+		        <p class="card-text"><br/><br/>PhD Student</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="card mb-3" style="max-width: 540px;">
+		  <div class="row g-0">
+		    <div class="col-md-4 align-self-center">
+		      <a href="https://tejas1995.github.io/" target="_blank" onclick="captureOutboundLink('https://tejas1995.github.io/');"><img src="glamor_photos/tejas.jpeg" class="img-fluid rounded-start" alt="Tejas Srinivasan"></a>
+		    </div>
+		    <div class="col-md-8">
+		      <div class="card-body">
+		        <h5 class="card-title">Tejas Srinivasan</h5>
+		        <p class="card-text"><br/><br/>PhD Student</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
+
+	</div>
+
+	<a id="opportunities"></a>
+	<div class="row">
+	<div class="col-md-12">
+
+		<table class="table-sm"><tr><td colspan="4"><h4>Opportunities</h4></td></tr>
+			<tr><a id="analogies_urap"></a><td class="col-md-12"><b>URAP REU</b> available Fall 2022 - Spring 2023 for one undergraduate student.<br/><b>Project Description: </b><i>Sun</i> is to <i>day</i> as <i>moon</i> is to ____? Analogies are a compact way to test our understanding of a written language. Analogies are intuitive, even fun, for humans to solve and to create. However, modern large language models used for tasks in Natural Language Processing (NLP), from web search to customer service dialogue, have mixed abilities to reason about them. In particular, human language understanding is grounded in <i>experience</i> with the world, and so analogies that draw heavily on physical or social intuitions, for example ``<i>glass</i> is to <i>shatter</i> as <i>rubber</i> is to ____'' can stump language models trained only on large-scale text from the Internet. For example, the popular OpenAI GPT-2 large language model predicts ``...rubber is to <i>shatter</i>'' with 99% <a href="https://demo.allennlp.org/next-token-lm/s/glass-is-to-shatter-to/J5C4P1D4M7">confidence</a>. To study the effects of <i>experiential, multimodal training</i> of language understanding models, we propose to use such an analogy completion task. <b>We propose to collect and curate a benchmark of linear word analogies to test the understanding capabilities of modern large language models.</b> Benchmarks that probe physical and social understanding are difficult and expensive to create, and so we propose analogies as a minimal probe that require little human effort to create, and will collect analogies that are easy for humans and hard for models as an online game.<br/>
+			<b>Skills needed: </b>Frontend and backend web development (e.g., Javascript, Flask)<br/>
+			<b>Bonus skills: </b>Familiarity with PyTorch code and HuggingFace models.<br/>
+			<b>Expected outcome: </b>Develop a web game for collecting analogies, benchmark a curated analogy dataset against large language models, draft and submit a research paper.
+			<b>Apply: </b>Fill <a href="https://forms.gle/nsKCyv4Yt6Z8angP7">this form</a> and mention the project, your background and interests, and why you might be a good match.</tr>
+		</table>
+
+	</div></div>
+
+</body>
+
+</html>
