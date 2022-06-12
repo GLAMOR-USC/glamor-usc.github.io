@@ -3,23 +3,20 @@
 <head>
 	<title>GLAMOR Lab</title>
 
-	<!-- This block only during dev -->
-	<!--
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="0" />
-	-->
-
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <base href="/">
 
-    <!-- Previously style.css -->
+    <!-- General CSS for this page -->
     <style>
     	#container, #container {
 			text-align:center;
+			padding: 2em 2em 4em;
+			margin: 0 auto;
+			font-size:16px;
+			min-width: 900px;
+			max-width: 900px;
 		}
 
 		.table {
@@ -43,17 +40,6 @@
 
 		h6 a:link {
 		  color: #990000;
-		}
-	</style>
-
-	<!-- Previously desktop.css -->
-	<style>
-		#container, #container {
-			padding: 2em 2em 4em;
-			margin: 0 auto;
-			font-size:16px;
-			min-width: 900px;
-			max-width: 900px;
 		}
 
 		.table-sm{
@@ -112,6 +98,7 @@
 		}
 	</style>
 
+	<!-- Defines .bib block -->
 	<style>
 		.bib {
 			font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
@@ -122,9 +109,77 @@
 		}
 	</style>
 
+	<!-- Defines scripts -->
+	<script>
+		function onPageLoad() {
+			populateStudents();
+		}
+
+		function populateStudents() {
+			// PhD Students
+			var full_names = ["Ting-Yun (Charlotte) Chang", "Anthony Liang", "Ishika Singh", "Wang (Bill) Zhu", "Abrar Anwar", "Lee Kezar", "Leticia Pinto-Alva", "Tejas Srinivasan"];
+			var display_names = ["Charlotte Chang", "Anthony Liang", "Ishika Singh", "Bill Zhu", "Abrar Anwar", "Lee Kezar", "Leticia Pinto-Alva", "Tejas Srinivasan"];
+			var websites = ["https://terarachang.github.io/", "https://aliang8.github.io/", "https://ishikasingh.github.io/", "https://billzhu.me/", "https://abraranwar.github.io/", "https://leekezar.github.io/", "https://leticiapinto.github.io/", "https://tejas1995.github.io/"];
+			var photos = ["ting-yun.png", "anthony.jpeg", "ishika.jpeg", "bill.jpeg", "abrar.png", "lee.jpeg", "leticia.png", "tejas.jpeg"];
+			var note = ["(co-<a href=\"https://robinjia.github.io/\">Robin Jia</a>)", "", "", "(co-<a href=\"https://robinjia.github.io/\">Robin Jia</a>)", "", "", "", ""];
+			var ws = [["3"], ["4", "5"], ["4"], ["3", "4"], ["4", "5"], ["3"], ["3"], ["3"]];
+
+			var idx = 0;
+			var order = [...Array(full_names.length).keys()].map(x => ++x);
+			order = order.sort((a, b) => 0.5 - Math.random());
+			for (idx=0; idx < full_names.length; idx++) {
+				jdx = order[idx] - 1;
+				var string_out = '';
+				string_out += '<div class="card mb-3" style="max-width: 540px;"><div class="row g-0"><div class="col-md-4">';
+				if (photos[jdx].length > 0) {
+					string_out += '<a href="' + websites[jdx] + '" target="_blank"><img src="glamor_photos/' + photos[jdx] + '" class="img-fluid rounded-start" alt="' + full_names[jdx] + '"></a>';
+				}
+				string_out += '</div><div class="col-md-8"><div class="card-body">';
+				string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
+				string_out += '<p class="card-text">' + note[jdx] + '<br/><br/>';
+				var ws_idx = 0;
+				for (ws_idx=0; ws_idx < ws[jdx].length; ws_idx++) {
+					string_out += '<img class="tiny-thumbnail" src="thumbnails/ws' + ws[jdx][ws_idx] + '.png" alt="World Scope "' + ws[jdx][ws_idx] + '; Robot images comissioned from Isoplod - https://twitter.com/isoplod">';
+				}
+				string_out += '</p></div></div></div></div>';
+
+				// Load to left/right side based on parity, populating left side first in case of odd number
+				var side = (idx % 2 == 0) ? document.getElementById("phd_students_left") : document.getElementById("phd_students_right");
+				side.innerHTML += string_out;
+			}
+
+			// Undergraduate Students
+			var full_names = ["Minh (Evelyn) Vu", "Kush Bhagat", "Chidera Iwudyke"];
+			var display_names = ["Evelyn Vu", "Kush Bhagat", "Chidera Iwudyke"];
+			var affiliation = ["Pomona College", "UT Dallas", "UMBC"];
+			var photos = ["", "", ""];
+			var program = ["Robotics REU", "USC SURE", "USC SURE"];
+			var program_link = ["https://www.cs.usc.edu/reu/", "https://viterbiundergrad.usc.edu/research/sure/", "https://viterbiundergrad.usc.edu/research/sure/"]
+
+			var idx = 0;
+			var order = [...Array(full_names.length).keys()].map(x => ++x);
+			order = order.sort((a, b) => 0.5 - Math.random());
+			for (idx=0; idx < full_names.length; idx++) {
+				jdx = order[idx] - 1;
+				var string_out = '';
+				string_out += '<div class="card mb-3" style="max-width: 540px;"><div class="row g-0"><div class="col-md-4">';
+				if (photos[jdx].length > 0) {
+					string_out += '<img src="glamor_photos/' + photos[jdx] + '" class="img-fluid rounded-start" alt="' + full_names[jdx] + '">';
+				}
+				string_out += '</div><div class="col-md-8"><div class="card-body">';
+				string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
+				string_out += '<p class="card-text">' + affiliation[jdx] + '<br/><br/><a href="' + program_link[jdx] + '">' + program[jdx] + '</a></p>';
+				string_out += '</div></div></div></div>';
+
+				var side = (idx % 2 == 0) ? document.getElementById("ug_students_left") : document.getElementById("ug_students_right");
+				side.innerHTML += string_out;
+			}
+		}
+	</script>
+
 </head>
 
-<body>
+<body onload="onPageLoad()">
 
 	<div id="container">
 
@@ -197,7 +252,6 @@
 	<div class="row" style="text-align:left">
 
 	<div class="col-md-6">
-
 		<div class="card mb-3" style="max-width: 540px;">
 		  <div class="row g-0">
 		    <div class="col-md-4">
@@ -211,124 +265,20 @@
 		    </div>
 		  </div>
 		</div>
+	</div><div class="col-md-6"></div>
 
-		<div class="card mb-3" style="max-width: 540px;">
-		  <div class="row g-0">
-		    <div class="col-md-4">
-		      <a href="https://terarachang.github.io/" target="_blank"><img src="glamor_photos/ting-yun.png" class="img-fluid rounded-start" alt="Ting-Yun (Charlotte) Chang"></a>
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Charlotte Chang</h5>
-		        <p class="card-text">(co-<a href="https://robinjia.github.io/">Robin Jia</a>)<br/><br/>PhD Student</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<div class="card mb-3" style="max-width: 540px;">
-		  <div class="row g-0">
-		    <div class="col-md-4">
-		      <a href="https://aliang8.github.io/" target="_blank"><img src="glamor_photos/anthony.jpeg" class="img-fluid rounded-start" alt="Anthony Liang"></a>
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Anthony Liang</h5>
-		        <p class="card-text"><br/><br/>PhD Student</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<div class="card mb-3" style="max-width: 540px;">
-		  <div class="row g-0">
-		    <div class="col-md-4">
-		      <a href="https://ishikasingh.github.io/" target="_blank"><img src="glamor_photos/ishika.jpeg" class="img-fluid rounded-start" alt="Ishika Singh"></a>
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Ishika Singh</h5>
-		        <p class="card-text"><br/><br/>PhD Student</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<div class="card mb-3" style="max-width: 540px;">
-		  <div class="row g-0">
-		    <div class="col-md-4 align-self-center">
-		      <a href="https://billzhu.me/" target="_blank"><img src="glamor_photos/bill.jpeg" class="img-fluid rounded-start" alt="Wang (Bill) Zhu"></a>
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Bill Zhu</h5>
-		        <p class="card-text">(co-<a href="https://robinjia.github.io/">Robin Jia</a>)<br/><br/>PhD Student</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
+	<div class="col-md-12">
+		<h5 style="text-align:left">PhD Students</h5>
 	</div>
+	<div class="col-md-6" id="phd_students_left"></div>
+	<div class="col-md-6" id="phd_students_right"></div>
 
-	<div class="col-md-6">
-
-		<div class="card mb-3" style="max-width: 540px;">
-		  <div class="row g-0">
-		    <div class="col-md-4">
-		      <a href="https://abraranwar.github.io/" target="_blank"><img src="glamor_photos/abrar.png" class="img-fluid rounded-start" alt="Abrar Anwar"></a>
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Abrar Anwar</h5>
-		        <p class="card-text"><br/><br/>PhD Student</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<div class="card mb-3" style="max-width: 540px;">
-		  <div class="row g-0">
-		    <div class="col-md-4">
-		      <a href="https://leekezar.github.io/"><img src="glamor_photos/lee.jpeg" class="img-fluid rounded-start" alt="Lee Kezar"></a>
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Lee Kezar</h5>
-		        <p class="card-text"><br/><br/>PhD Student</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<div class="card mb-3" style="max-width: 540px;">
-		  <div class="row g-0">
-		    <div class="col-md-4">
-		      <a href="https://leticiapinto.github.io/" target="_blank"><img src="glamor_photos/leticia.png" class="img-fluid rounded-start" alt="Leticia Pinto-Alva"></a>
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Leticia Pinto-Alva</h5>
-		        <p class="card-text"><br/><br/>PhD Student</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<div class="card mb-3" style="max-width: 540px;">
-		  <div class="row g-0">
-		    <div class="col-md-4 align-self-center">
-		      <a href="https://tejas1995.github.io/" target="_blank"><img src="glamor_photos/tejas.jpeg" class="img-fluid rounded-start" alt="Tejas Srinivasan"></a>
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Tejas Srinivasan</h5>
-		        <p class="card-text"><br/><br/>PhD Student</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
+	<div class="col-md-12">
+		<h5 style="text-align:left">Undergraduate Students</h5>
 	</div>
+	<div class="col-md-6" id="ug_students_left"></div>
+	<div class="col-md-6" id="ug_students_right"></div>
+	
 	</div>
 	</div>
 
@@ -342,10 +292,11 @@
 
 	<div class="col-md-12">
 		<table class="table-sm">
-			<tr><td class="col-md-12"><a id="analogies_urap"></a><b>URAP REU</b> available Fall 2022 - Spring 2023 for one undergraduate student.<br/><b>Project Description: </b><i>Sun</i> is to <i>day</i> as <i>moon</i> is to ____? Analogies are a compact way to test our understanding of a written language. Analogies are intuitive, even fun, for humans to solve and to create. However, modern large language models used for tasks in Natural Language Processing (NLP), from web search to customer service dialogue, have mixed abilities to reason about them. In particular, human language understanding is grounded in <i>experience</i> with the world, and so analogies that draw heavily on physical or social intuitions, for example "<i>glass</i> is to <i>break</i> as <i>rubber</i> is to ____" can stump language models trained only on large-scale text from the Internet. For example, the popular OpenAI GPT-2 large language model predicts "...rubber is to <i>chew</i>" with 99% <a href="https://demo.allennlp.org/next-token-lm/s/glass-is-to-break-to/A3M1H6X6Q6">confidence</a>. To study the effects of <i>experiential, multimodal training</i> of language understanding models, we propose to use such an analogy completion task. <b>We propose to collect and curate a benchmark of linear word analogies to test the understanding capabilities of modern large language models.</b> Benchmarks that probe physical and social understanding are difficult and expensive to create, and so we propose analogies as a minimal probe that require little human effort to create, and will collect analogies that are easy for humans and hard for models as an online game.<br/>
+			<tr><td class="col-md-12"><a id="analogies_urap"></a><b>URAP REU</b> available Fall 2022 - Spring 2023 for one undergraduate student.<br/><br/>
+				<b>Project Description: </b><i>Sun</i> is to <i>day</i> as <i>moon</i> is to ____? Analogies are a compact way to test our understanding of a written language. Analogies are intuitive, even fun, for humans to solve and to create. However, modern large language models used for tasks in Natural Language Processing (NLP), from web search to customer service dialogue, have mixed abilities to reason about them. In particular, human language understanding is grounded in <i>experience</i> with the world, and so analogies that draw heavily on physical or social intuitions, for example "<i>glass</i> is to <i>break</i> as <i>rubber</i> is to ____" can stump language models trained only on large-scale text from the Internet. For example, the popular OpenAI GPT-2 large language model predicts "...rubber is to <i>break</i>" with high <a href="https://demo.allennlp.org/next-token-lm/s/glass-is-to-break-to/A3M1H6X6Q6">confidence</a>. To study the effects of <i>experiential, multimodal training</i> of language understanding models, we propose to use such an analogy completion task. <b>We propose to collect and curate a benchmark of linear word analogies to test the understanding capabilities of modern large language models.</b> Benchmarks that probe physical and social understanding are difficult and expensive to create, and so we propose analogies as a minimal probe that require little human effort to create, and will collect analogies that are easy for humans and hard for models as an online game.<br/><br/>
 			<b>Skills needed: </b>Frontend and backend web development (e.g., Javascript, Flask)<br/>
 			<b>Bonus skills: </b>Familiarity with PyTorch code and HuggingFace models.<br/>
-			<b>Expected outcome: </b>Develop a web game for collecting analogies, benchmark a curated analogy dataset against large language models, draft and submit a research paper.
+			<b>Expected outcome: </b>Develop a web game for collecting analogies, benchmark a curated analogy dataset against large language models, draft and submit a research paper.<br/>
 			<b>Apply: </b>Fill <a href="https://forms.gle/nsKCyv4Yt6Z8angP7">this form</a> and mention the project, your background and interests, and why you might be a good match.</td></tr>
 		</table>
 
