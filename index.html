@@ -133,13 +133,17 @@
 			for (idx=0; idx < full_names.length; idx++) {
 				jdx = order[idx] - 1;
 				var string_out = '';
-				string_out += '<div class="card mb-3" style="max-width: 540px; min-height: 180px;"><div class="row g-0"><div class="col-md-4">';
+				string_out += '<div class="card mb-3" style="max-width: 540px; min-height: 157px;"><div class="row g-0"><div class="col-md-4">';
 				if (photos[jdx].length > 0) {
 					string_out += '<a href="' + websites[jdx] + '" target="_blank"><img src="glamor_photos/' + photos[jdx] + '" class="img-fluid rounded-start" title="' + full_names[jdx] + '"></a>';
 				}
 				string_out += '</div><div class="col-md-8"><div class="card-body">';
 				string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
-				string_out += '<p class="card-text">' + note[jdx] + '<br/>';
+				string_out += '<p class="card-text">' + note[jdx];
+				var br_idx = 0;
+				for (br_idx=0; br_idx < 2 - ws[jdx].length; br_idx++) {
+					string_out += '<br/>';
+				}
 				var ws_idx = 0;
 				for (ws_idx=0; ws_idx < ws[jdx].length; ws_idx++) {
 					string_out += '<br/><a href="world_scopes.html#ws' + ws[jdx][ws_idx] + '" target="_blank"><img class="tiny-thumbnail" src="thumbnails/ws' + ws[jdx][ws_idx] + '.png" title="' + world_scope_descs[ws[jdx][ws_idx]] + '"></a> ' + ws_themes[jdx][ws_idx];
