@@ -111,6 +111,8 @@
 
 	<!-- Defines scripts -->
 	<script>
+		var world_scope_descs = ["", "World Scope 1 - Corpora and Representations", "World Scope 2 - The Written Word", "World Scope 3 - The World of Sights and Sounds", "World Scope 4 - Embodiment and Action", "World Scope 5 - The Social World"];
+
 		function onPageLoad() {
 			populateStudents();
 		}
@@ -139,7 +141,7 @@
 				string_out += '<p class="card-text">' + note[jdx] + '<br/><br/>';
 				var ws_idx = 0;
 				for (ws_idx=0; ws_idx < ws[jdx].length; ws_idx++) {
-					string_out += '<img class="tiny-thumbnail" src="thumbnails/ws' + ws[jdx][ws_idx] + '.png" title="World Scope ' + ws[jdx][ws_idx] + '; Robot images comissioned from Isoplod - https://twitter.com/isoplod">';
+					string_out += '<a href="world_scopes.html#ws"' + ws[jdx][ws_idx] + '" target="_blank"><img class="tiny-thumbnail" src="thumbnails/ws' + ws[jdx][ws_idx] + '.png" title="' + world_scope_descs[ws[jdx][ws_idx]] + '"></a>';
 				}
 				string_out += '</p></div></div></div></div>';
 
