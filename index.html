@@ -168,7 +168,7 @@
 			for (idx=0; idx < full_names.length; idx++) {
 				jdx = order[idx] - 1;
 				var string_out = '';
-				string_out += '<div class="card mb-3" style="max-width: 540px;"><div class="row g-0"><div class="col-md-4 my-auto">';
+				string_out += '<div class="card mb-3" style="max-width: 540px; min-height: 160px;"><div class="row g-0"><div class="col-md-4 my-auto">';
 				var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
 				string_out += '<img src="' + photo + '" class="img-fluid rounded-start" title="' + full_names[jdx] + '">';
 				string_out += '</div><div class="col-md-8"><div class="card-body">';
@@ -257,9 +257,9 @@
 	<div class="row" style="text-align:left">
 
 	<div class="col-md-6">
-		<div class="card mb-3" style="max-width: 540px;">
+		<div class="card mb-3" style="max-width: 540px; min-height: 160px;">
 		  <div class="row g-0">
-		    <div class="col-md-4">
+		    <div class="col-md-4 my-auto">
 		      <a href="https://jessethomason.com/" target="_blank"><img src="glamor_photos/jesse.jpeg" class="img-fluid rounded-start" title="Jesse Thomason"></a>
 		    </div>
 		    <div class="col-md-8">
