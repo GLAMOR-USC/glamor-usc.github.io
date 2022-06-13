@@ -134,9 +134,8 @@
 				jdx = order[idx] - 1;
 				var string_out = '';
 				string_out += '<div class="card mb-3" style="max-width: 540px; min-height: 157px;"><div class="row g-0"><div class="col-md-4">';
-				if (photos[jdx].length > 0) {
-					string_out += '<a href="' + websites[jdx] + '" target="_blank"><img src="glamor_photos/' + photos[jdx] + '" class="img-fluid rounded-start" title="' + full_names[jdx] + '"></a>';
-				}
+				var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
+				string_out += '<a href="' + websites[jdx] + '" target="_blank"><img src="' + photo + '" class="img-fluid rounded-start" title="' + full_names[jdx] + '"></a>';
 				string_out += '</div><div class="col-md-8"><div class="card-body">';
 				string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
 				string_out += '<p class="card-text">' + note[jdx];
@@ -170,9 +169,8 @@
 				jdx = order[idx] - 1;
 				var string_out = '';
 				string_out += '<div class="card mb-3" style="max-width: 540px;"><div class="row g-0"><div class="col-md-4">';
-				if (photos[jdx].length > 0) {
-					string_out += '<img src="glamor_photos/' + photos[jdx] + '" class="img-fluid rounded-start" title="' + full_names[jdx] + '">';
-				}
+				var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
+				string_out += '<img src="' + photo + '" class="img-fluid rounded-start" title="' + full_names[jdx] + '">';
 				string_out += '</div><div class="col-md-8"><div class="card-body">';
 				string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
 				string_out += '<p class="card-text">' + affiliation[jdx] + '<br/><br/><a href="' + program_link[jdx] + '">' + program[jdx] + '</a></p>';
