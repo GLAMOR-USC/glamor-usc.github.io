@@ -155,12 +155,12 @@
 			}
 
 			// Undergraduate Students
-			var full_names = ["Minh (Evelyn) Vu", "Kush Bhagat", "Chidera Iwudyke"];
-			var display_names = ["Evelyn Vu", "Kush Bhagat", "Chidera Iwudyke"];
-			var affiliation = ["Cal Poly Pomona", "UT Dallas", "UMBC"];
-			var photos = ["", "", ""];
-			var program = ["Robotics REU", "USC SURE", "USC SURE"];
-			var program_link = ["https://www.cs.usc.edu/reu/", "https://viterbiundergrad.usc.edu/research/sure/", "https://viterbiundergrad.usc.edu/research/sure/"]
+			var full_names = ["Minh (Evelyn) Vu", "Kush Bhagat", "Chidera Iwudyke", "Tanis Sarbatananda"];
+			var display_names = ["Evelyn Vu", "Kush Bhagat", "Chidera Iwudyke", "Tanis Sarbatananda"];
+			var affiliation = ["Cal Poly Pomona", "UT Dallas", "UMBC", "Los Angeles City College"];
+			var photos = ["", "", "", ""];
+			var program = ["Robotics REU", "USC SURE", "USC SURE", "USC/LACC ASSURE"];
+			var program_link = ["https://www.cs.usc.edu/reu/", "https://viterbiundergrad.usc.edu/research/sure/", "https://viterbiundergrad.usc.edu/research/sure/", ""]
 
 			var idx = 0;
 			var order = [...Array(full_names.length).keys()].map(x => ++x);
@@ -173,7 +173,12 @@
 				string_out += '<img src="' + photo + '" class="img-fluid rounded-start" title="' + full_names[jdx] + '">';
 				string_out += '</div><div class="col-md-8"><div class="card-body">';
 				string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
-				string_out += '<p class="card-text">' + affiliation[jdx] + '<br/><br/><a href="' + program_link[jdx] + '">' + program[jdx] + '</a></p>';
+				string_out += '<p class="card-text">' + affiliation[jdx] + '<br/><br/>';
+				if (program_link[jdx].length > 0) {
+					string_out += '<a href="' + program_link[jdx] + '">' + program[jdx] + '</a></p>';
+				} else {
+					string_out += program[jdx] + '</p>';
+				}
 				string_out += '</div></div></div></div>';
 
 				var side = (idx % 2 == 0) ? document.getElementById("ug_students_left") : document.getElementById("ug_students_right");
