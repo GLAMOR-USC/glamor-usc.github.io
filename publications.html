@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title>GLAMOR Lab - Fun!</title>
+    <link rel="icon" type="image/x-icon" href="./thumbnails/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./main.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <base href="/">
+
+    <!-- General CSS for this page -->
+    <style>
+
+        ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .3);
+        }
+
+        @media screen and (max-width: 480px) {
+            #news > * {
+                padding: 0 0 0 0;
+            }
+
+            #news {
+                margin: 0 0 0 0.5em;
+            }
+        }
+
+        #banner {
+            height: 400px;
+        }
+        @media screen and (max-width: 480px) {
+            #banner {
+                height: 200px
+            }
+        }
+
+    </style>
+
+    <!-- Defines .bib block -->
+    <style>
+        .bib {
+            font-family: 'Roboto Mono', Roboto, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+            font-size: 12px;
+            padding: 8px 8px 8px 8px;
+            border-style: ridge;
+            background-color: aliceblue;
+        }
+    </style>
+
+    <!-- Defines scripts -->
+    <script>
+        var world_scope_descs = ["", "World Scope 1 - Corpora and Representations", "World Scope 2 - The Written Word", "World Scope 3 - The World of Sights and Sounds", "World Scope 4 - Embodiment and Action", "World Scope 5 - The Social World"];
+
+        function onPageLoad() {
+            populatePapersAll();
+        }
+
+        function populatePapersAll() {
+            var years = ['2022'];
+
+            for(idx = 0; idx < years.length; idx++){
+                var year = years[idx];
+                string_out = '<h4 style="text-align:left;color:#990000;margin-bottom:20px">' + year +'</h4>'
+                string_out += populatePapers(year);
+                string_out += '<br/><br/>'
+                document.getElementById("publications").innerHTML += string_out;
+            }
+        }
+
+        function populatePapers(year) {
+            // List of all papers; add new item at top of each list
+            var paper_titles = [
+                "CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks",
+            ];
+
+            var authors = [
+                "Tejas Srinivasan, Ting-Yun Chang, Leticia Pinto Alva, Georgios Chochlakis, Mohammad Rostami, Jesse Thomason",
+            ];
+
+            var venues = [
+                "arXiV pre-print",
+            ];
+
+            var links = [
+                '<a href=\"https://arxiv.org/abs/2206.09059\">Paper</a> / <a href=\"https://github.com/GLAMOR-USC/CLiMB\">Code</a>',
+            ];
+
+            var years = [
+                '2022',
+            ];
+
+            var idxs = [...Array(paper_titles.length).keys()];
+            filtered_idxs = idxs.filter(idx => years[idx] == year);
+            var string_out = '';
+            for (idx=0; idx < filtered_idxs.length; idx++) {
+                jdx = filtered_idxs[idx];
+                string_out += '<div class="col-md-12" style="margin-bottom:10px">';
+                string_out += '<h5 style="text-align:left;color:#990000;margin-bottom:0px">' + paper_titles[jdx] +'</h5>';
+                string_out += '<p style="text-align:left;margin-bottom:0px"><b>' + authors[jdx] +'</b></p>';
+                string_out += '<p style="text-align:left;margin-bottom:0px">' + venues[jdx] +'</p>';
+                string_out += '<p style="text-align:left;margin-bottom:0px">' + links[jdx] +'</p>';
+                string_out += '</div>';
+            }
+            return string_out;
+        }
+    </script>
+
+</head>
+
+<body onload="onPageLoad()">
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #990000;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="glamor-thumbnail" src="thumbnails/glamor-logo-big.svg" title="GLAMOR lab logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0" >
+                <li class="nav-item"><a id="nav-link-custom" class="nav-link" href="people.html">People</a></li>
+                <li class="nav-item"><a id="nav-link-custom" class="nav-link" href="publications.html">Publications</a></li>
+                <li class="nav-item"><a id="nav-link-custom" class="nav-link" href="opportunities.html">Opportunities</a></li>
+                <li class="nav-item"><a id="nav-link-custom" class="nav-link" href="fun.html">Fun!</a></li>
+                </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="container">
+
+    <br/>
+
+
+    <h3 style="text-align:left;color:#990000;margin-bottom:20px">Publications</h3>
+
+    <div class="col-md-12" id="publications"></div>
+
+
+</div>
+</body>
+
+</html>

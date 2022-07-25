@@ -2,106 +2,44 @@
 
 <head>
 	<title>GLAMOR Lab</title>
+    <link rel="icon" type="image/x-icon" href="./thumbnails/favicon.png">
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./main.css"> 
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <base href="/">
 
     <!-- General CSS for this page -->
     <style>
-    	#container, #container {
-			text-align:center;
-			padding: 2em 2em 4em;
-			margin: 0 auto;
-			font-size:16px;
-			min-width: 900px;
-			max-width: 900px;
+
+		@media screen and (max-width: 480px) {
+			#news > * {
+				padding: 0 0 0 0;
+			}
+
+			#news {
+				margin: 0 0 0 0.5em;
+			}
 		}
 
-		.table {
-			align:center;
+		#banner {
+			height: 400px;
+		}
+		@media screen and (max-width: 480px) {
+			#banner {
+				height: 200px
+			}
 		}
 
-		.table>tbody>tr>td,
-		.table>tbody>tr>th {
-		  border-top: none;
-		  border-bottom: none;
-		}
-
-		.centering {
-			text-align: center;
-			vertical-align: center;
-		}
-
-		a:link { 
-			text-decoration: none; 
-		}
-
-		h6 a:link {
-		  color: #990000;
-		}
-
-		.table-sm{
-			font-size:20px;
-		}
-		h1{
-			font-size:66px;
-		}
-		h2{
-			font-size:54px;
-		}
-		h3{
-			font-size:42px;
-		}
-		h4{
-			font-size:36px;
-		}
-		h5{
-			font-size:24px;
-		}
-		h6{
-			font-size:20px;
-		}
-
-		.btn{
-			font-size:18px !important;
-		}
-
-		.fixed-td {
-			width: 120px;
-		}
-
-		.glamor-thumbnail {
-			height: 70px;
-		}
-
-		.tiny-thumbnail {
-			height: 32px;
-			padding: 2px;
-		}
-
-		.img-thumbnail {
-			width: 100px;
-			height: 100px;
-		}
-
-		.face-thumbnail {
-			width: 200px;
-			height: 200px;
-			padding: 10px;
-		}
-
-		.face-card {
-			width: 14rem;
-			height: 16rem;
-		}
 	</style>
 
 	<!-- Defines .bib block -->
 	<style>
 		.bib {
-			font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+			font-family: 'Roboto Mono', Roboto, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 			font-size: 12px;
 			padding: 8px 8px 8px 8px;
 			border-style: ridge;
@@ -120,11 +58,12 @@
 		function populateStudents() {
 			// PhD Students
 			var full_names = ["Ting-Yun (Charlotte) Chang", "Anthony Liang", "Ishika Singh", "Wang (Bill) Zhu", "Abrar Anwar", "Lee Kezar", "Leticia Pinto-Alva", "Tejas Srinivasan"];
-			var display_names = ["Charlotte Chang", "Anthony Liang", "Ishika Singh", "Bill Zhu", "Abrar Anwar", "Lee Kezar", "Leticia Pinto-Alva", "Tejas Srinivasan"];
+			var display_names = ["Ting-Yun Chang", "Anthony Liang🧋", "Ishika Singh", "Bill Zhu 👻", "Abrar Anwar 🍞", "Lee Kezar", "Leticia Pinto-Alva", "Tejas Srinivasan"];
 			var websites = ["https://terarachang.github.io/", "https://aliang8.github.io/", "https://ishikasingh.github.io/", "https://billzhu.me/", "https://abraranwar.github.io/", "https://leekezar.github.io/", "https://leticiapinto.github.io/", "https://tejas1995.github.io/"];
-			var photos = ["ting-yun.png", "anthony.jpeg", "ishika.jpeg", "bill.jpeg", "abrar.png", "lee.jpeg", "leticia.png", "tejas.jpeg"];
+			var photos = ["ting-yun.jpg", "anthony.jpeg", "ishika.jpeg", "bill.jpeg", "abrar.png", "lee.jpeg", "leticia.png", "tejas-2.jpg"];
+			var roles = ["1<sup>st</sup> year PhD student", "1<sup>st</sup> year PhD student", "1<sup>st</sup> year PhD student", "2<sup>nd</sup> year PhD student", "1<sup>st</sup> year PhD student", "3<sup>rd</sup> year PhD student", "1<sup>st</sup> year PhD student", "1<sup>st</sup> year PhD student"]
 			var note = ["(co-<a href=\"https://robinjia.github.io/\">Robin Jia</a>)", "", "", "(co-<a href=\"https://robinjia.github.io/\">Robin Jia</a>)", "", "", "", ""];
-			var ws_themes = [["VL Model Training"], ["Language-guided RL", "RL for Dialogue"], ["VLN and VL Interaction"], ["Compositional Semantics", "VLN"], ["Speech and Gesture", "Social Dining"], ["VL for ASL"], ["Vision-and-Language"], ["VL Model Training"]];
+			var ws_themes = [["VL Model Training"], ["Language-guided RL", "RL for Dialogue"], ["VLN and VL Interaction"], ["Compositional Semantics", "VLN"], ["Speech and Gesture", "Assistive Robotics"], ["VL for ASL"], ["Vision-and-Language"], ["VL Model Training"]];
 			var ws = [["3"], ["4", "5"], ["4"], ["3", "4"], ["4", "5"], ["3"], ["3"], ["3"]];
 
 			var idx = 0;
@@ -133,24 +72,27 @@
 			for (idx=0; idx < full_names.length; idx++) {
 				jdx = order[idx] - 1;
 				var string_out = '';
-				string_out += '<div class="card mb-3" style="max-width: 540px; min-height: 160px;"><div class="row g-0"><div class="col-md-4 my-auto">';
+				string_out += '<div class="card mb-3" style="max-width: 540px; min-height: 160px;"><div class="row g-0"><div class="image-cropper">';
 				var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
 				string_out += '<a href="' + websites[jdx] + '" target="_blank"><img src="' + photo + '" class="img-fluid rounded-start" title="' + full_names[jdx] + '"></a>';
-				string_out += '</div><div class="col-md-8"><div class="card-body">';
+				string_out += '</div></div><div class="row g-0"><div class="card-body">';
 				string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
-				string_out += '<p class="card-text">' + note[jdx];
+				string_out += '<p class="card-text">' + roles[jdx] + "<br/>" + note[jdx] + "<br/>";
 				var br_idx = 0;
-				for (br_idx=0; br_idx < 2 - ws[jdx].length; br_idx++) {
-					string_out += '<br/>';
-				}
+				//for (br_idx=0; br_idx < 2 - ws[jdx].length; br_idx++) {
+				//	string_out += '<br/>';
+				//}
 				var ws_idx = 0;
-				for (ws_idx=0; ws_idx < ws[jdx].length; ws_idx++) {
-					string_out += '<br/><a href="world_scopes.html#ws' + ws[jdx][ws_idx] + '" target="_blank"><img class="tiny-thumbnail" src="thumbnails/ws' + ws[jdx][ws_idx] + '.png" title="' + world_scope_descs[ws[jdx][ws_idx]] + '"></a> ' + ws_themes[jdx][ws_idx];
-				}
-				string_out += '</p></div></div></div></div>';
+				//for (ws_idx=0; ws_idx < ws[jdx].length; ws_idx++) {
+				//	string_out += '<br/><a href="world_scopes.html#ws' + ws[jdx][ws_idx] + '" target="_blank"><img class="tiny-thumbnail" src="thumbnails/ws' + ws[jdx][ws_idx] + '.png" title="' + world_scope_descs[ws[jdx][ws_idx]] + '"></a> ' + ws_themes[jdx][ws_idx];
+				//}
+				//for (br_idx=0; br_idx < 3 - ws[jdx].length; br_idx++) {
+				//string_out += '<br/>';
+				//}
+				string_out += '</p></div></div></div>';
 
 				// Load to left/right side based on parity, populating left side first in case of odd number
-				var side = (idx % 2 == 0) ? document.getElementById("phd_students_left") : document.getElementById("phd_students_right");
+				var side = (idx % 3 == 0) ? document.getElementById("phd_students_col1") : ((idx % 3 == 1) ? document.getElementById("phd_students_col2") : document.getElementById("phd_students_col3"));
 				side.innerHTML += string_out;
 			}
 
@@ -168,7 +110,7 @@
 			for (idx=0; idx < full_names.length; idx++) {
 				jdx = order[idx] - 1;
 				var string_out = '';
-				string_out += '<div class="card mb-3" style="max-width: 540px; min-height: 160px;"><div class="row g-0"><div class="col-md-4 my-auto">';
+				string_out += '<div class="card mb-3" style="max-width: 540px; min-height: 160px;"><div class="row g-0"><div class="col-md-4 my-0">';
 				var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
 				string_out += '<img src="' + photo + '" class="img-fluid rounded-start" title="' + full_names[jdx] + '">';
 				string_out += '</div><div class="col-md-8"><div class="card-body">';
@@ -191,52 +133,45 @@
 
 <body onload="onPageLoad()">
 
-	<div id="container">
-
-	<div class="row"><div class="col-md-12">
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #990000;">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#">
-	      <img class="glamor-thumbnail" src="thumbnails/glamor.png" title="GLAMOR lab logo">
+	      <img class="glamor-thumbnail" src="thumbnails/glamor-logo-big.svg" title="GLAMOR lab logo">
 	    </a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#news"><h4 style="color:#FFC72C">News</h4></a>
-	        </li><h4 style="color:#FFC72C">&nbsp;|&nbsp;</h4>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#group"><h4 style="color:#FFC72C">Group</h4></a>
-	        </li><h4 style="color:#FFC72C">&nbsp;|&nbsp;</h4>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#opportunities"><h4 style="color:#FFC72C">Opportunities</h4></a>
-	        </li>
-	      </ul>
+	      <ul class="navbar-nav ms-auto mb-lg-0" >
+	        	<li class="nav-item"><a id="nav-link-custom" class="nav-link" href="people.html">People</a></li>
+				<li class="nav-item"><a id="nav-link-custom" class="nav-link" href="publications.html">Publications</a></li>
+				<li class="nav-item"><a id="nav-link-custom" class="nav-link" href="opportunities.html">Opportunities</a></li>
+				<li class="nav-item"><a id="nav-link-custom" class="nav-link" href="fun.html">Fun!</a></li>
+				</ul>
 	    </div>
 	  </div>
 	</nav>
-	<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #990000;">
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#" style="color:#FFC72C">
-	      <h5><b>G</b>rounding <b>L</b>anguage in <b>A</b>ctions, <b>M</b>ultimodal <b>O</b>bservations, and <b>R</b>obots</h5>
-	    </a>
-	  </div>
-	</nav>
-	</div></div>
+
+	<div id="container">
 
 	<br/>
 
 	<div class="row">
-		<div class="col-md-12">
-			<h4 style="color:#990000;text-align:left">GLAMOR Lab</h4>
+		<h4 style="color:#990000;text-align:justify;">GLAMOR Lab: G<span style="color:black">rounding </span> L<span style="color:black">anguage in </span>A<span style="color:black">ctions, </span>M<span style="color:black">ultimodal </span>O<span style="color:black">bservations and </span>R<span style="color:black">obots</span></h4>
+		<br/>
+
+		<div class="col-md-5">
+			<img src="glamor_photos/lab-pic.jpg" class="img col-md-12" style="border:2px solid #000">
+		</div>
+
+		<div class="col-md-7">
 			<p align="justify" style="font-size:20px">
-				We bring together <b>natural language processing and robotics</b> to connect language to the world (RoboNLP). Our lab is broadly interested in connecting language to agent perception and action, and lifelong learning through interaction.
+				Welcome to the GLAMOR Lab ✨ at the <span style="color:#990000"><b>University of Southern California</b></span>! We bring together <b>natural language processing and robotics</b> to connect language to the world (<b>RoboNLP</b>). Our lab is broadly interested in connecting language to agent perception and action, and lifelong learning through interaction.
 			</p>
 		</div>
 	</div>
 
+	<!--
 	<div class="row">
 
 	<a id="news"></a>
@@ -250,68 +185,101 @@
 	</div>
 	</div>
 	</div>
-
+	-->
 	<br/>
 
-	<div class="row">
-	<a id="group"></a>
-	<div class="col-md-12">
-		<h4 style="text-align:left">Group</h4>
-	</div>
+	<div class="row g-0">
+		<h4 style="text-align:left;color:#990000;margin-bottom:20px">Research Areas</h4>
 
-	<div class="row" style="text-align:left">
-
-	<div class="col-md-6">
-		<div class="card mb-3" style="max-width: 540px; min-height: 160px;">
-		  <div class="row g-0">
-		    <div class="col-md-4 my-auto">
-		      <a href="https://jessethomason.com/" target="_blank"><img src="glamor_photos/jesse.jpeg" class="img-fluid rounded-start" title="Jesse Thomason"></a>
-		    </div>
-		    <div class="col-md-8">
-		      <div class="card-body">
-		        <h5 class="card-title">Jesse Thomason</h5>
-		        <p class="card-text"><br/><br/>Principal Investigator</p>
-		      </div>
-		    </div>
-		  </div>
+		<div class="row me-1 col-md-4" id="ws3">
+			<h5 style="text-align:left; padding-left: 0"><img class="tiny-thumbnail" src="thumbnails/ws3.png"> Language and Perception</h5>
+			<p align="justify" style="font-size:20px;vertical-align: top; padding-left: 0">
+				Language paired with sensory perception like vision, audio, and haptics. This scope includes audio-visual speech recognition, visual dialog, and recognizing heavy means increased physical weight.
+			</p>
 		</div>
-	</div><div class="col-md-6"></div>
 
-	<div class="col-md-12">
-		<h5 style="text-align:left">PhD Students</h5>
+		<div class="row col-md-4 me-0" id="ws4">
+			<h5 style="text-align:left; padding-left: 0"><img class="tiny-thumbnail" src="thumbnails/ws4.png"> Embodiment and Action</h5>
+			<p align="justify" style="font-size:20px;vertical-align: top; padding-left: 0">
+				Language paired with or leading to world actions. This scope includes learning that <i>left</i> corresponds to a spatial orientation, and that <i>it's hot</i> is a pragmatic warning against physically touching an object.
+			</p>
+		</div>
+		
+		<div class="row col-md-4 me-0" id="ws5">
+			<h5 style="text-align:left; padding-left: 0"><img class="tiny-thumbnail" src="thumbnails/ws5.png"> The Social World</h5>
+			<p align="justify" style="font-size:20px;vertical-align: top; padding-left: 0">
+				Language is what language does, and so language use in social contexts to cause changes in others' behavior and states of mind is the highest scope for grounded natural langauge use.<br/><br/>
+			</p>
+		</div>
+		
 	</div>
-	<div class="col-md-6" id="phd_students_left"></div>
-	<div class="col-md-6" id="phd_students_right"></div>
+	<br/>
 
-	<div class="col-md-12">
-		<h5 style="text-align:left">Undergraduate Students</h5>
+	<div class="row g-0">
+
+		<div class="row col-md-8" id="group">
+		<div class="col-md-12">
+			<h4 style="text-align:left;color:#990000;margin-bottom:20px;vertical-align:top">Group</h4>
+		</div>
+		<div class="col-md-4">
+			<div class="card mb-3" style="max-width: 540px; min-height: 160px;">
+			  <div class="row g-0">
+			    <div class="image-cropper" style="border-radius:50%">
+			      <a href="https://jessethomason.com/" target="_blank"><img src="glamor_photos/jesse.jpeg" class="img-fluid rounded-start" title="Jesse Thomason"></a>
+			    </div>
+			    </div><div class="row g-0">
+			      <div class="card-body">
+			        <h5 class="card-title">Jesse Thomason✨</h5>
+			        <p class="card-text">Principal Investigator</p>
+			    </div>
+			  </div>
+			</div>
+		</div><div class="col-md-8"></div>
+		<div class="col-md-4 px-0" id="phd_students_col1"></div>
+		<div class="col-md-4 px-0" id="phd_students_col2"></div>
+		<div class="col-md-4 px-0" id="phd_students_col3"></div>
+		<!--
+		<div class="col-md-12">
+			<h5 style="text-align:left">Undergraduate Students</h5>
+		</div>
+		<div class="col-md-6" id="ug_students_left"></div>
+		<div class="col-md-6" id="ug_students_right"></div>
+		-->
+			</div>
+
+		<div class="row col-md-4 g-0">
+		<div class="col-md-12">
+			<h4 style="text-align:left;color:#990000;margin-bottom:20px;padding-bottom:0px;vertical-align:top">News</h4>
+		</div>
+			<div class="6u" style="padding-top: 0px; margin-top: 10px; background-color: #f8f8f8;vertical-align:top " id="news">
+				<div class="content" style="overflow-y: scroll; padding-left: 20px; max-height: 1100px; padding-right: 10px; margin-top: 10px; text-align: left" id="div-news">
+					<ul style="list-style-type: none; padding: 0; margin-left: 0; margin-bottom: 10">
+					<li><b>06/2022</b>  Pre-print alert! We introduce <a href="https://arxiv.org/abs/2206.09059">CLiMB</a> 🧗‍♂️, a new continual learning benchmark for vision-and-language tasks.</li>
+					<li><b>05/2022</b>  REU research opportunity! Available Fall 2022-Spring 2023. <a href="opportunities.html#analogies_urap">More details</a>.</li>
+					<li><b>04/2022</b>  Prof. Thomason talked to high school students at Viterbi K-12 STEM Center about robotics at <a href="https://viterbik12.usc.edu/robotics-ed-week/">Robotics Ed Week</a>.</li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+					<li><br/></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
 	</div>
-	<div class="col-md-6" id="ug_students_left"></div>
-	<div class="col-md-6" id="ug_students_right"></div>
 	
-	</div>
-	</div>
-
-	<div class="row">
-
-	<a id="opportunities"></a>
-	<div class="row">
-	<div class="col-md-12">
-		<h4 style="text-align:left">Opportunities</h4>
-	</div>
-
-	<div class="col-md-12">
-		<table class="table-sm">
-			<tr><td class="col-md-12"><a id="analogies_urap"></a><b>URAP REU</b> available Fall 2022 - Spring 2023 for one undergraduate student.<br/><br/>
-				<b>Project Description: </b><i>Sun</i> is to <i>day</i> as <i>moon</i> is to ____? Analogies are a compact way to test our understanding of a written language. Analogies are intuitive, even fun, for humans to solve and to create. However, modern large language models used for tasks in Natural Language Processing (NLP), from web search to customer service dialogue, have mixed abilities to reason about them. In particular, human language understanding is grounded in <i>experience</i> with the world, and so analogies that draw heavily on physical or social intuitions, for example "<i>glass</i> is to <i>break</i> as <i>rubber</i> is to ____" can stump language models trained only on large-scale text from the Internet. For example, the popular OpenAI GPT-2 large language model predicts "...rubber is to <i>break</i>" with high <a href="https://demo.allennlp.org/next-token-lm/s/glass-is-to-break-to/A3M1H6X6Q6">confidence</a>. To study the effects of <i>experiential, multimodal training</i> of language understanding models, we propose to use such an analogy completion task. <b>We propose to collect and curate a benchmark of linear word analogies to test the understanding capabilities of modern large language models.</b> Benchmarks that probe physical and social understanding are difficult and expensive to create, and so we propose analogies as a minimal probe that require little human effort to create, and will collect analogies that are easy for humans and hard for models as an online game.<br/><br/>
-			<b>Skills needed: </b>Frontend and backend web development (e.g., Javascript, Flask)<br/>
-			<b>Bonus skills: </b>Familiarity with PyTorch code and HuggingFace models.<br/>
-			<b>Expected outcome: </b>Develop a web game for collecting analogies, benchmark a curated analogy dataset against large language models, draft and submit a research paper.<br/>
-			<b>Apply: </b>Fill <a href="https://forms.gle/nsKCyv4Yt6Z8angP7">this form</a> and mention the project, your background and interests, and why you might be a good match.</td></tr>
-		</table>
-
-	</div></div>
-	</div>
 
 </div>
 </body>
