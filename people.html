@@ -1,0 +1,243 @@
+<html>
+
+<head>
+    <title>GLAMOR Lab - People</title>
+    <link rel="icon" type="image/x-icon" href="./thumbnails/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./main.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <base href="/">
+
+    <!-- General CSS for this page -->
+    <style>
+        .card {
+            border: 0px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+        }
+
+        .card-body {
+            text-align: left;
+            padding: 0rem 1rem;
+        }
+        .card-title {
+            margin-bottom:0rem;
+        }
+        .tiny-thumbnail {
+            height: 24px;
+        }
+
+        @media screen and (max-width: 480px) {
+            #news > * {
+                padding: 0 0 0 0;
+            }
+
+            #news {
+                margin: 0 0 0 0.5em;
+            }
+        }
+
+        #banner {
+            height: 400px;
+        }
+        @media screen and (max-width: 480px) {
+            #banner {
+                height: 200px
+            }
+        }
+
+    </style>
+
+    <!-- Defines .bib block -->
+    <style>
+        .bib {
+            font-family: 'Roboto Mono', Roboto, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+            font-size: 12px;
+            padding: 8px 8px 8px 8px;
+            border-style: ridge;
+            background-color: aliceblue;
+        }
+    </style>
+
+    <!-- Defines scripts -->
+    <script>
+        var world_scope_descs = ["", "World Scope 1 - Corpora and Representations", "World Scope 2 - The Written Word", "World Scope 3 - The World of Sights and Sounds", "World Scope 4 - Embodiment and Action", "World Scope 5 - The Social World"];
+
+        function onPageLoad() {
+            populateStudents();
+        }
+
+        function populateStudents() {
+            // PhD Students
+            var full_names = ["Ting-Yun (Charlotte) Chang", "Anthony Liang", "Ishika Singh", "Wang (Bill) Zhu", "Abrar Anwar", "Lee Kezar", "Leticia Pinto-Alva", "Tejas Srinivasan"];
+            var display_names = ["Ting-Yun Chang", "Anthony Liang", "Ishika Singh", "Bill Zhu", "Abrar Anwar", "Lee Kezar", "Leticia Pinto-Alva", "Tejas Srinivasan"];
+            var websites = ["https://terarachang.github.io/", "https://aliang8.github.io/", "https://ishikasingh.github.io/", "https://billzhu.me/", "https://abraranwar.github.io/", "https://leekezar.github.io/", "https://leticiapinto.github.io/", "https://tejas1995.github.io/"];
+            var photos = ["ting-yun.jpg", "anthony.jpeg", "ishika.jpeg", "bill.jpeg", "abrar.png", "lee.jpeg", "leticia.png", "tejas-2.jpg"];
+            var roles = ["1<sup>st</sup> year PhD student", "1<sup>st</sup> year PhD student", "1<sup>st</sup> year PhD student", "2<sup>nd</sup> year PhD student", "1<sup>st</sup> year PhD student", "3<sup>rd</sup> year PhD student", "1<sup>st</sup> year PhD student", "1<sup>st</sup> year PhD student"]
+            var note = ["(co-<a href=\"https://robinjia.github.io/\">Robin Jia</a>)", "", "", "(co-<a href=\"https://robinjia.github.io/\">Robin Jia</a>)", "", "", "", ""];
+            var ws_themes = [["VL Model Training"], ["Language-guided RL", "RL for Dialogue"], ["VLN and VL Interaction"], ["Compositional Semantics", "VLN"], ["Speech and Gesture", "Assistive Robotics"], ["VL for ASL"], ["Vision-and-Language"], ["Vision-Language Alignment", "VL Continual Learning"]];
+            var ws = [["3"], ["4", "5"], ["4"], ["3", "4"], ["4", "5"], ["3"], ["3"], ["3", "3"]];
+
+            var idx = 0;
+            var order = [...Array(full_names.length).keys()].map(x => ++x);
+            order = order.sort((a, b) => 0.5 - Math.random());
+            for (idx=0; idx < full_names.length; idx++) {
+                jdx = order[idx] - 1;
+                var string_out = '';
+                string_out += '<div class="card mb-3" style="max-width: 1000px; min-height: 160px;"><div class="row g-0 col-12"><div class="col-md-2 my-0">';
+                var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
+                string_out += '<a href="' + websites[jdx] + '" target="_blank"><img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '"></a>';
+                string_out += '</div><div class="col-md-10"><div class="card-body">';
+                string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
+                string_out += '<p class="card-text">' + roles[jdx] + " " + note[jdx] + "<br/>";
+                var br_idx = 0;
+                //for (br_idx=0; br_idx < 2 - ws[jdx].length; br_idx++) {
+                //  string_out += '<br/>';
+                //}
+                var ws_idx = 0;
+                string_out += '</p></div><p class="card-text" style="text-align:left;padding:0rem 1rem">'
+                for (ws_idx=0; ws_idx < ws[jdx].length; ws_idx++) {
+                  string_out += '<a href="world_scopes.html#ws' + ws[jdx][ws_idx] + '" target="_blank"><img class="tiny-thumbnail" src="thumbnails/ws' + ws[jdx][ws_idx] + '.png" title="' + world_scope_descs[ws[jdx][ws_idx]] + '"></a> ' + ws_themes[jdx][ws_idx] + "&ensp;";
+                }
+                //for (br_idx=0; br_idx < 3 - ws[jdx].length; br_idx++) {
+                //string_out += '<br/>';
+                //}
+                string_out += '</p></div></div></div>';
+
+                // Load to left/right side based on parity, populating left side first in case of odd number
+                //var side = (idx % 2 == 0) ? document.getElementById("phd_students_left") : document.getElementById("phd_students_right");
+                var side = document.getElementById("phd_students_left")
+                side.innerHTML += string_out;
+            }
+
+            // Undergraduate Students
+            var full_names = ["Minh (Evelyn) Vu", "Kush Bhagat", "Chidera Iwudyke", "Tanis Sarbatananda"];
+            var display_names = ["Evelyn Vu", "Kush Bhagat", "Chidera Iwudyke", "Tanis Sarbatananda"];
+            var affiliation = ["Rising Junior @ Cal Poly Pomona", "Rising Sophomore @ University of Texas, Dallas", "Rising Senior @ University of Maryland, Baltimore County", "Rising Junior @ Los Angeles City College"];
+            var photos = ["", "", "", ""];
+            var visit_period = ['Summer 2022', 'Summer 2022', 'Summer 2022', 'Summer 2022']
+            var program = ["Robotics REU", "USC SURE", "USC SURE", "USC/LACC ASSURE"];
+            var program_link = ["https://www.cs.usc.edu/reu/", "https://viterbiundergrad.usc.edu/research/sure/", "https://viterbiundergrad.usc.edu/research/sure/", ""]
+
+            var idx = 0;
+            var order = [...Array(full_names.length).keys()].map(x => ++x);
+            order = order.sort((a, b) => 0.5 - Math.random());
+            for (idx=0; idx < full_names.length; idx++) {
+                jdx = order[idx] - 1;
+                var string_out = '';
+                string_out += '<div class="card mb-3" style="max-width: 1000px; min-height: 160px;"><div class="row g-0 col-12"><div class="col-md-2 my-0">';
+                var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
+                string_out += '<img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '">';
+                string_out += '</div><div class="col-md-10"><div class="card-body">';
+                string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
+                string_out += '<p class="card-text">' + affiliation[jdx] + "<br/>";
+                string_out += 'Visited ' + visit_period[idx] + ' ';
+                if (program_link[jdx].length > 0) {
+                    string_out += 'via <a href="' + program_link[jdx] + '">' + program[jdx] + '</a> program</p>';
+                } else {
+                    string_out += 'via ' + program[jdx] + '</p>';
+                }
+                
+                string_out += '</p></div></div></div>';
+
+                // Load to left/right side based on parity, populating left side first in case of odd number
+                //var side = (idx % 2 == 0) ? document.getElementById("phd_students_left") : document.getElementById("phd_students_right");
+                var side = document.getElementById("ug_students_left");
+                side.innerHTML += string_out;
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="onPageLoad()">
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #990000;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="glamor-thumbnail" src="thumbnails/glamor-logo-big.svg" title="GLAMOR lab logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0" >
+                <li class="nav-item"><a id="nav-link-custom" class="nav-link" href="people.html">People</a></li>
+                <li class="nav-item"><a id="nav-link-custom" class="nav-link" href="publications.html">Publications</a></li>
+                <li class="nav-item"><a id="nav-link-custom" class="nav-link" href="opportunities.html">Opportunities</a></li>
+                <li class="nav-item"><a id="nav-link-custom" class="nav-link" href="fun.html">Fun!</a></li>
+                </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="container">
+
+    <br/>
+
+    <div class="row">
+        <h3 style="color:#990000;text-align:left">People</span></h3>
+        <br/>
+    </div>
+
+    <!--
+    <div class="row">
+
+    <a id="news"></a>
+    <div class="row">
+    <div class="col-md-12">
+
+        <table class="table-sm"><tr><td colspan="4"><h4>News</h4></td></tr>
+            <tr><td class="col-md-3"><b>Opportunity!</b><br/>&nbsp;&nbsp;REU</td><td class="col-md-5">Glass is to Break as Rubber is to Bend: Analogies for Natural Language Processing</td><td class="col-md-2"><a class="btn btn-light" style="padding:5px;" href="#analogies_urap">details</a></td><td class="col-md-2">Fall 2022-Spring 2023</td></tr>
+            <tr><td class="col-md-3"><b>Robotics Ed Week</b><br/>&nbsp;&nbsp;Viterbi K-12 STEM Center</td><td class="col-md-5">Talking to Robots: Challenges for Communicating with Robots in Text</td><td class="col-md-2"><a class="btn btn-light" style="padding:5px;" href="https://viterbik12.usc.edu/robotics-ed-week/">website</a></td><td class="col-md-2">April 8, 2022</td></tr>
+        </table>
+    </div>
+    </div>
+    </div>
+    -->
+    <br/>
+
+    <div class="row">
+
+        <div class="row col-md-12">
+        <a id="group"></a>
+
+        <div class="col-md-10">
+            <div class="card mb-3" style="max-width: 1000px; min-height: 160px;">
+              <div class="row g-0 col-12">
+                <div class="col-md-2 my-0">
+                      <a href="https://jessethomason.com/" target="_blank"><img src="glamor_photos/jesse.jpeg" class="img-full rounded-start" title="Jesse Thomason"></a>
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body mt-0">
+                    <h5 class="card-title">Jesse Thomason</h5>
+                    <p class="card-text">Principal Investigator<br/><br/><br/><br/></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-12">
+            <h4 style="text-align:left;color:#990000;margin-bottom:20px">PhD Students</h4>
+        </div>
+
+        <div class="col-md-10" id="phd_students_left"></div>
+        <div class="col-md-12">
+            <h4 style="text-align:left;color:#990000;margin-bottom:20px">Visiting Students</h4>
+        </div>
+        <div class="col-md-10" id="ug_students_left"></div>
+            </div>
+
+
+    </div>
+    
+
+</div>
+</body>
+
+</html>

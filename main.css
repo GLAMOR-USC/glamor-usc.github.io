@@ -1,0 +1,196 @@
+        #container, #container {
+            text-align:center;
+            padding: 0em 2em 4em;
+            margin: 0 auto;
+            font-size:18px;
+            min-width: 1200px;
+            max-width: 1200px;
+            font-family: "Lato", sans-serif;
+        }
+
+        .table {
+            align:center;
+        }
+
+        .table>tbody>tr>td,
+        .table>tbody>tr>th {
+          border-top: none;
+          border-bottom: none;
+        }
+
+        .centering {
+            text-align: center;
+            vertical-align: center;
+        }
+
+        a:link { 
+            text-decoration: none; 
+        }
+
+        h6 a:link {
+          color: #990000;
+        }
+
+        .table-sm{
+            font-size:20px;
+        }
+        h1{
+            font-size:66px;
+        }
+        h2{
+            font-size:54px;
+        }
+        h3{
+            font-size:42px;
+        }
+        h4{
+            font-size:30.5px;
+        }
+        h5{
+            font-size:24px;
+        }
+        h6{
+            font-size:20px;
+        }
+
+        .btn{
+            font-size:18px !important;
+        }
+
+        .fixed-td {
+            width: 120px;
+        }
+
+        .glamor-thumbnail {
+            height: 50px;
+        }
+
+        .tiny-thumbnail {
+            height: 32px;
+            padding: 2px;
+        }
+
+        .img-thumbnail {
+            width: 100px;
+            height: 100px;
+        }
+
+        .img-fluid {
+            width: 150px;
+            height: 150px;
+        }
+
+        .img-full {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+        }
+
+        .image-cropper {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #000;
+            margin-bottom:  5px;
+        }
+
+        .face-thumbnail {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+
+        .face-card {
+            width: 14rem;
+            height: 16rem;
+        }
+
+        .card {
+            border: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-body {
+            text-align: center;
+            padding: 0rem 0rem;
+        }
+        .card-title {
+            margin-bottom:0rem;
+        }
+
+        .navbar {
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+            width: 100%;
+            float: center;
+            font-family: "Lato", sans-serif;
+        }
+
+        li{
+          margin: 20px 0;
+        }
+
+        li b {
+            color: #990000;
+        }
+
+        .col-md-auto{
+        flex:0 0 auto;width:auto}.col-md-1{
+        flex:0 0 auto;width:10%}.col-md-2{
+        flex:0 0 auto;width:16.66666667%}.col-md-3{
+        flex:0 0 auto;width:22%}.col-md-4{
+        flex:0 0 auto;width:33.33333333%}.col-md-5{
+        flex:0 0 auto;width:41.66666667%}.col-md-6{
+        flex:0 0 auto;width:50%}.col-md-7{
+        flex:0 0 auto;width:58.33333333%}.col-md-8{
+        flex:0 0 auto;width:66.66666667%}.col-md-9{
+        flex:0 0 auto;width:78%}.col-md-10{
+        flex:0 0 auto;width:83.33333333%}.col-md-11{
+        flex:0 0 auto;width:91.66666667%}.col-md-12{
+        flex:0 0 auto;width:100%}
+
+        #nav-link-custom {
+            font-size: 28px;
+            color: #FFC72C;
+            padding-right: 20px;
+        }
+
+        #nav-link-custom:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 5px;
+        }
+
+        ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .3);
+        }
+
+        @media screen and (max-width: 480px) {
+            #news > * {
+                padding: 0 0 0 0;
+            }
+
+            #news {
+                margin: 0 0 0 0.5em;
+            }
+        }
+
+        #banner {
+            height: 400px;
+        }
+        @media screen and (max-width: 480px) {
+            #banner {
+                height: 200px
+            }
+        }
