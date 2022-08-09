@@ -157,6 +157,7 @@
             var program_link = ["https://www.cs.usc.edu/reu/", "https://viterbiundergrad.usc.edu/research/sure/", "https://viterbiundergrad.usc.edu/research/sure/", ""];
             var project_title = ['Language Commands for a Virtual Agent', 'Object Segmentation for ALFRED', 'Gesture for Second Language Learning', 'Towards Embodied Speech Recognition'];
             var project_deliverable = ['reu/2022/vu.pdf', 'reu/2022/bhagat.pdf', 'reu/2022/iwudyke.pdf', 'reu/2022/sarbatananda.pdf'];
+            var link_anchors = ['2022vu', '2022bhagat', '2022iwudyke', '2022sarbatananda'];
 
             var idx = 0;
             var order = [...Array(full_names.length).keys()].map(x => ++x);
@@ -164,6 +165,7 @@
             for (idx=0; idx < full_names.length; idx++) {
                 jdx = order[idx] - 1;
                 var string_out = '';
+                string_out += '<a href="#' + link_anchors[jdx] + '"></a>';
                 string_out += '<div class="card mb-3" style="max-width: 1000px; min-height: 160px;"><div class="row g-0 col-12"><div class="col-md-2 my-0">';
                 var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
                 string_out += '<img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '">';
