@@ -143,33 +143,40 @@
                 side.innerHTML += string_out;
             }
 
-            // past Students
+            // Previous Students [fixed order based on time of lab affiliation]
+            // Add new prev students to the end of these lists; students will be rendered
+            // in reverse list order.
             var full_names = ["Minh (Evelyn) Vu", "Kush Bhagat", "Chidera Iwudyke", "Tanis Sarbatananda"];
             var display_names = ["Evelyn Vu", "Kush Bhagat", "Chidera Iwudyke", "Tanis Sarbatananda"];
             var affiliation = ["Rising Junior @ Cal Poly Pomona", "Rising Sophomore @ University of Texas, Dallas", "Rising Senior @ University of Maryland, Baltimore County", "Rising Junior @ Los Angeles City College"];
             var photos = ["", "", "", ""];
             var visit_period = ['Summer 2022', 'Summer 2022', 'Summer 2022', 'Summer 2022']
             var program = ["Robotics REU", "USC SURE", "USC SURE", "USC/LACC ASSURE"];
-            var program_link = ["https://www.cs.usc.edu/reu/", "https://viterbiundergrad.usc.edu/research/sure/", "https://viterbiundergrad.usc.edu/research/sure/", ""]
+            var program_link = ["https://www.cs.usc.edu/reu/", "https://viterbiundergrad.usc.edu/research/sure/", "https://viterbiundergrad.usc.edu/research/sure/", ""];
+            var project_title = ['Language Commands for a Virtual Agent', 'Object Segmentation for ALFRED', 'Gesture for Second Language Learning', 'Towards Embodied Speech Recognition'];
+            var project_deliverable = ['reu/2022/vu.pdf', 'reu/2022/bhagat.pdf', 'reu/2022/iwudyke.pdf', 'reu/2022/sarbatananda.pdf'];
+            var link_anchors = ['2022vu', '2022bhagat', '2022iwudyke', '2022sarbatananda'];
 
             var idx = 0;
             var order = [...Array(full_names.length).keys()].map(x => ++x);
-            //order = order.sort((a, b) => 0.5 - Math.random());
+            order.reverse();
             for (idx=0; idx < full_names.length; idx++) {
                 jdx = order[idx] - 1;
                 var string_out = '';
+                string_out += '<a id="#' + link_anchors[jdx] + '"></a>';
                 string_out += '<div class="card mb-3" style="max-width: 1000px; min-height: 160px;"><div class="row g-0 col-12"><div class="col-md-4 my-0">';
                 var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
                 string_out += '<img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '">';
                 string_out += '</div><div class="col-md-8"><div class="card-body">';
                 string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
                 string_out += '<p class="card-text">' + affiliation[jdx] + "<br/>";
-                string_out += 'Visited ' + visit_period[idx] + ' ';
+                string_out += 'Visited ' + visit_period[jdx] + ' ';
                 if (program_link[jdx].length > 0) {
-                    string_out += 'via <a href="' + program_link[jdx] + '">' + program[jdx] + '</a> program</p>';
+                    string_out += 'via <a href="' + program_link[jdx] + '">' + program[jdx] + '</a>';
                 } else {
-                    string_out += 'via ' + program[jdx] + '</p>';
+                    string_out += 'via ' + program[jdx];
                 }
+                string_out += '<br/><a href="' + project_deliverable[jdx] + '">' + project_title[jdx] + '</a>';
                 
                 string_out += '</p></div></div></div>';
 
@@ -250,6 +257,7 @@
             </div>
         </div>
         <div class="col-md-3"></div>
+
         <div class="col-md-12">
             <h4 style="text-align:left;color:#990000;margin-bottom:20px">PhD Students</h4>
         </div>
@@ -264,12 +272,11 @@
             </div>
 
         <div class="col-md-12">
-            <h4 style="text-align:left;color:#990000;margin-bottom:20px">Past Students</h4>
+            <h4 style="text-align:left;color:#990000;margin-bottom:20px">Previous Visiting Students</h4>
         </div>
         <div class="col-md-6" id="past_students_left"></div>
         <div class="col-md-6" id="past_students_right"></div>
             </div>
-
 
     </div>
     
