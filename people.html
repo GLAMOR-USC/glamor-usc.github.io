@@ -116,11 +116,12 @@
             }
 
             // Undergraduate Students
-            var full_names = ["Flora Jia", "Elle Szabo", "Junu Song", "Chu Fan", "Yuan Huang"];
-            var display_names = ["Flora Jia", "Elle Szabo", "Junu Song", "Chu Fan", "Yuan Huang"];
-            var year = ["Junior Undergraduate @ USC", "Senior Undergraduate @ USC", "Junior Undergraduate @ USC", "Senior Undergraduate @ USC", "2nd year Masters Student @ USC"]
-            var program = ["Computer Science and Applied Mathematics", "Computer Science", "Computer Science", "Computer Science", "Electrical and Computer Engineering <br/>Specializing in Machine Learning and Data Science"];
-            var photos = ["flora.jpg", "elle.jpg", "junusong.jpg", "", "yuan.png"];
+            var full_names = ["Flora Jia", "Elle Szabo", "Junu Song", "Chu Fan", "Yuan Huang", "Leslie Moreno", "Julie Kim"];
+            var display_names = ["Flora Jia", "Elle Szabo", "Junu Song", "Chu Fan", "Yuan Huang", "Leslie Moreno", "Julie Kim"];
+            var year = ["Junior Undergraduate @ USC", "Senior Undergraduate @ USC", "Junior Undergraduate @ USC", "Senior Undergraduate @ USC", "2nd year Masters Student @ USC", "Sophomore Undergraduate @ USC", "Undergraduate @ USC", ]
+            var program = ["Computer Science and Applied Mathematics", "Computer Science", "Computer Science", "Computer Science (Games)", "Electrical and Computer Engineering <br/>Specializing in Machine Learning and Data Science", "Computer Engineering and Computer Science", "Computer Science"];
+            var photos = ["flora.jpg", "elle.jpg", "junusong.jpg", "chu.jpeg", "yuan.png", "leslie.jpeg", ""];
+            var ug_program = ["<a href=\"https://viterbiundergrad.usc.edu/research/curve/\">CURVE</a> Fellowship", "", "<a href=\"https://viterbiundergrad.usc.edu/research/curve/\">CURVE</a> Fellowship", "<a href=\"https://undergrad.usc.edu/faculty/urap/\">URAP</a>", "", "<a href=\"https://viterbiundergrad.usc.edu/research/curve/\">CURVE</a> Fellowship (co-<a href=\"https://maja-mataric.web.app/\">Maja Mataric</a>)", "<a href=\"https://viterbiundergrad.usc.edu/research/curve/\">CURVE</a> Fellowship (co-<a href=\"https://maja-mataric.web.app/\">Maja Mataric</a>)"]
 
             var idx = 0;
             var order = [...Array(full_names.length).keys()].map(x => ++x);
@@ -135,6 +136,7 @@
                 string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
                 string_out += '<p class="card-text">' + year[jdx] + "<br/>";
                 string_out += program[jdx] + "<br/>";
+                string_out += ug_program[jdx] + "<br/>";
                 string_out += '</p></div></div></div>';
 
                 // Load to left/right side based on parity, populating left side first in case of odd number
