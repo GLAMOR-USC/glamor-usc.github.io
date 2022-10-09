@@ -80,30 +80,35 @@
         function populatePapers(year) {
             // List of all papers; add new item at top of each list
             var paper_titles = [
+                "Iterative Vision-and-Language Navigation",
                 "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
                 "Curriculum Learning for Data-Efficient Vision-Language Alignment",
                 "CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks",
             ];
 
             var authors = [
-                "Ishika Singh, Valts Blukis, Arsalan Mousavian, Ankit Goyal, Danfei Xu, Jonathan Tremblay, Dieter Fox, Jesse Thomason, Animesh Garg",
-                "Tejas Srinivasan, Xiang Ren, Jesse Thomason",
-                "Tejas Srinivasan, Ting-Yun Chang, Leticia Pinto Alva, Georgios Chochlakis, Mohammad Rostami, Jesse Thomason",
+                "Jacob Krantz, Shurjo Banerjee, <b>Wang Zhu</b>, Jason Corso, Peter Anderson, Stefan Lee, <b>Jesse Thomason</b>",
+                "<b>Ishika Singh</b>, Valts Blukis, Arsalan Mousavian, Ankit Goyal, Danfei Xu, Jonathan Tremblay, Dieter Fox, <b>Jesse Thomason</b>, Animesh Garg",
+                "<b>Tejas Srinivasan</b>, Xiang Ren, <b>Jesse Thomason</b>",
+                "<b>Tejas Srinivasan, Ting-Yun Chang, Leticia Pinto Alva</b>, Georgios Chochlakis, Mohammad Rostami, <b>Jesse Thomason</b>",
             ];
 
             var venues = [
+                "arXiV pre-print",
                 "arXiV pre-print",
                 "arXiV pre-print",
                 "NeurIPS 2022 Datasets and Benchmarks Track",
             ];
 
             var links = [
+                '<a href=\"https://arxiv.org/abs/2210.03087\">Paper</a> / <a href=\"https://jacobkrantz.github.io/ivln\">Website</a> / <a href=\"https://github.com/Bill1235813/IVLN\">Code</a>',
                 '<a href=\"https://arxiv.org/abs/2209.11302\">Paper</a> / <a href=\"https://progprompt.github.io/\">Website</a> / <a href=\"https://www.youtube.com/watch?v=cawHI_rYQoM\">Video</a>',
                 '<a href=\"https://arxiv.org/abs/2207.14525\">Paper</a>',
                 '<a href=\"https://arxiv.org/abs/2206.09059\">Paper</a> / <a href=\"https://github.com/GLAMOR-USC/CLiMB\">Code</a>',
             ];
 
             var years = [
+                '2022',
                 '2022',
                 '2022',
                 '2022',
@@ -116,7 +121,7 @@
                 jdx = filtered_idxs[idx];
                 string_out += '<div class="col-md-12" style="margin-bottom:10px">';
                 string_out += '<h5 style="text-align:left;color:#990000;margin-bottom:0px">' + paper_titles[jdx] +'</h5>';
-                string_out += '<p style="text-align:left;margin-bottom:0px"><b>' + authors[jdx] +'</b></p>';
+                string_out += '<p style="text-align:left;margin-bottom:0px">' + authors[jdx] +'</p>';
                 string_out += '<p style="text-align:left;margin-bottom:0px">' + venues[jdx] +'</p>';
                 string_out += '<p style="text-align:left;margin-bottom:0px">' + links[jdx] +'</p>';
                 string_out += '</div>';
