@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>GLAMOR Lab - Publications</title>
+    <title>GLAMOR Lab - Sponsors</title>
     <link rel="icon" type="image/x-icon" href="./thumbnails/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
@@ -44,6 +44,15 @@
             }
         }
 
+        ol li::marker {
+            font-size: 24px;
+            color:#990000;
+        }
+
+        li b {
+            color:#000000;
+        }
+
     </style>
 
     <!-- Defines .bib block -->
@@ -55,6 +64,8 @@
             border-style: ridge;
             background-color: aliceblue;
         }
+
+
     </style>
 
     <!-- Defines scripts -->
@@ -62,18 +73,19 @@
         var world_scope_descs = ["", "World Scope 1 - Corpora and Representations", "World Scope 2 - The Written Word", "World Scope 3 - The World of Sights and Sounds", "World Scope 4 - Embodiment and Action", "World Scope 5 - The Social World"];
 
         function onPageLoad() {
-            populatePapersAll();
+            populateGrantsAll();
         }
 
-        function populatePapersAll() {
+        function populateGrantsAll() {
             var years = ['2022'];
 
             string_out = '';
             for(year_idx = 0; year_idx < years.length; year_idx++){
                 var year = years[year_idx];
-                string_out += '<h4 style="text-align:left;color:#990000;margin-bottom:20px">' + year +'</h4>';
-                string_out += populatePapers(year);
+                //string_out += '<h4 style="text-align:left;color:#990000;margin-bottom:20px">' + year +'</h4>';
+                string_out += populateGrants(year);
                 string_out += '<br/>';
+                console.log(string_out)
 
             }
 
@@ -81,65 +93,68 @@
 
         }
 
-        function populatePapers(year) {
-            // List of all papers; add new item at top of each list
-            var paper_titles = [
-                "Transformer Adapters for Robot Learning",
-                "Generalization Differences between End-to-End and Neuro-Symbolic Vision-Language Reasoning Systems",
-                "Iterative Vision-and-Language Navigation",
-                "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
-                "Curriculum Learning for Data-Efficient Vision-Language Alignment",
-                "CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks",
+        function populateGrants(year) {
+            // List of all Grants; add new item at top of each list
+            var grant_titles = [
+                "Communicating with Natural Language Dialogue for Teams of Intelligent Systems and Humans",
+                "Determining Community Needs for Accessibility Tools that Facilitate Programming Education and Workforce Readiness for Persons with Disabilities",
+                "An Accessible Machine Learning-Based ADRD Screening Tool for Families and Caregivers",
             ];
 
-            var authors = [
-                "<b>Anthony Liang</b>, <b>Ishika Singh</b>, Karl Pertsch, <b>Jesse Thomason</b>",
-                "<b>Wang Zhu</b>, <b>Jesse Thomason</b>, Robin Jia",
-                "Jacob Krantz, Shurjo Banerjee, <b>Wang Zhu</b>, Jason Corso, Peter Anderson, Stefan Lee, <b>Jesse Thomason</b>",
-                "<b>Ishika Singh</b>, Valts Blukis, Arsalan Mousavian, Ankit Goyal, Danfei Xu, Jonathan Tremblay, Dieter Fox, <b>Jesse Thomason</b>, Animesh Garg",
-                "<b>Tejas Srinivasan</b>, Xiang Ren, <b>Jesse Thomason</b>",
-                "<b>Tejas Srinivasan, Ting-Yun Chang, Leticia Pinto Alva</b>, Georgios Chochlakis, Mohammad Rostami, <b>Jesse Thomason</b>",
+            var pis = [
+                '<a href="https://people.ict.usc.edu/~traum/">Jonathan May</a> (PI), <b>Jesse Thomason (co-PI)</b>',
+                '<a href="https://maja-mataric.web.app/">Maja Matarić</a> (PI), co-PIs: <a href="https://rossier.usc.edu/faculty-research/directory/stephenaguilar">Stephen Aguilar</a>, <a href="https://pt.usc.edu/faculty/sook-lei-liew-phd-otr-l/">Sook-Lei Liew</a>, <a href="https://viterbi.usc.edu/directory/faculty/Ragusa/Gisele">Gisele Ragusa</a>, <b>Jesse Thomason</b>',
+                '<a href="https://maja-mataric.web.app/">Maja Matarić</a> (PI),  <b>Jesse Thomason (co-PI)</b>',
+
             ];
 
-            var venues = [
-                "Pretraining for Robot Learning Workshop, CoRL 2022",
-                "EMNLP 2022",
-                "arXiV pre-print",
-                "arXiV pre-print",
-                "arXiV pre-print",
-                "NeurIPS 2022 Datasets and Benchmarks Track",
+            var grant_ids = [
+                'W911NF2320010',
+                'ITE-2236320',
+                'NIH Award Number: 5-P30-AG-073105-02',
+            ]
+
+            var agencies = [
+                '<a href="https://apps.dtic.mil/sti/pdfs/AD1104260.pdf">US Army Artificial Intelligence Innovation Institute (A2I2) Aiding Multi-Domain Operations (MDO)</a>',
+                '<a href="http://www.nsf.gov/">National Science Foundation (NSF)</a>, Convergence Accelerator Track H',
+                'U Penn’s Alzheimer’s Disease Research Center supported by NIH "Penn Artificial Intelligence and Technology Collaboratory for Healthy Aging”',
+
+
+            ];
+
+            var dates = [
+                'Nov 15, 2022 - Nov 14, 2025',
+                'Dec 15, 2022 - Nov 30, 2023',
+                '2023',
             ];
 
             var links = [
-                '<a href=\"https://openreview.net/forum?id=H--wvRYBmF\">Paper</a>',
-                '<a href=\"https://arxiv.org/abs/2210.15037\">Paper</a>',
-                '<a href=\"https://arxiv.org/abs/2210.03087\">Paper</a> / <a href=\"https://jacobkrantz.github.io/ivln\">Website</a> / <a href=\"https://github.com/Bill1235813/IVLN\">Code</a>',
-                '<a href=\"https://arxiv.org/abs/2209.11302\">Paper</a> / <a href=\"https://progprompt.github.io/\">Website</a> / <a href=\"https://www.youtube.com/watch?v=cawHI_rYQoM\">Video</a>',
-                '<a href=\"https://arxiv.org/abs/2207.14525\">Paper</a>',
-                '<a href=\"https://arxiv.org/abs/2206.09059\">Paper</a> / <a href=\"https://github.com/GLAMOR-USC/CLiMB\">Code</a>',
+                'Project page being set up.',
+                'Project page being set up.',
+                '<a href="https://uscinteractionlab.web.app/project/ADRD">Project Page</a>'
             ];
 
             var years = [
                 '2022',
                 '2022',
                 '2022',
-                '2022',
-                '2022',
-                '2022',
             ];
 
-            var idxs = [...Array(paper_titles.length).keys()];
+            var idxs = [...Array(grant_titles.length).keys()];
             filtered_idxs = idxs.filter(idx => years[idx] == year);
-            var string_out = '';
+            var string_out = '<ol>';
             for (idx=0; idx < filtered_idxs.length; idx++) {
                 jdx = filtered_idxs[idx];
-                string_out += '<div class="col-md-12" style="margin-bottom:10px">';
-                string_out += '<h5 style="text-align:left;color:#990000;margin-bottom:0px">' + paper_titles[jdx] +'</h5>';
-                string_out += '<p style="text-align:left;margin-bottom:0px">' + authors[jdx] +'</p>';
-                string_out += '<p style="text-align:left;margin-bottom:0px">' + venues[jdx] +'</p>';
+                string_out += '<li><div class="col-md-12" style="margin-bottom:10px">';
+                string_out += '<h5 style="text-align:left;color:#990000;margin-bottom:0px">' + grant_titles[jdx] +'</h5>';
+                string_out += '<p style="text-align:left;margin-bottom:0px"><b>Sponsor</b>: ' + agencies[jdx] +'</p>';
+                string_out += '<p style="text-align:left;margin-bottom:0px"><b>Grant ID</b>: ' + grant_ids[jdx] +'</p>';
+                string_out += '<p style="text-align:left;margin-bottom:0px"><b>People</b>: ' + pis[jdx] +'</p>';
+                string_out += '<p style="text-align:left;margin-bottom:0px"><b>Grant Duration</b>: ' + dates[jdx] +'</p>';
                 string_out += '<p style="text-align:left;margin-bottom:0px">' + links[jdx] +'</p>';
-                string_out += '</div>';
+                string_out += '</div></li>';
             }
+            string_out += "</ol>"
             return string_out;
         }
     </script>
@@ -172,8 +187,9 @@
     <br/>
 
 
-    <h3 style="text-align:left;color:#990000;margin-bottom:20px">Publications</h3>
+    <h3 style="text-align:left;color:#990000;margin-bottom:20px">Sponsors</h3>
 
+    <p style="text-align:left;margin-bottom:0px">Here is a list of our grants:</p>    
     <div class="col-md-12" id="publications"></div>
 
 
