@@ -202,6 +202,15 @@
                            "Computer Engineering and Computer Science", 
                            "Computer Engineering and Computer Science",
                            "Computer Science and Business Administration"];
+            var ug_websites = [
+                "", 
+                "", 
+                "https://eszabo12.github.io/", 
+                "", 
+                "", 
+                "", 
+                "", 
+                ""];
             var photos = ["flora.jpg", 
                           "allen.jpg",
                           "elle.jpg", 
@@ -227,7 +236,7 @@
                 var string_out = '';
                 string_out += '<div class="card mb-3" style="max-width: 1000px; min-height: 160px;"><div class="row g-0 col-12"><div class="col-md-4 my-0">';
                 var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
-                string_out += '<img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '">';
+                string_out += '<a href="' + ug_websites[jdx] + '" target="_blank"><img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '">';
                 string_out += '</div><div class="col-md-8"><div class="card-body">';
                 string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
                 string_out += '<p class="card-text">' + year[jdx] + "<br/>";
