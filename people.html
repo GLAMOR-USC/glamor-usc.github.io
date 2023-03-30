@@ -267,7 +267,8 @@
                                "Sophomore @ University of Texas, Dallas", 
                                "Senior @ University of Maryland, Baltimore County", 
                                "Junior @ Los Angeles City College"];
-            var photos = ["junusong.jpg", "", "", "", ""];
+            var photos = ["junusong.jpg", "", "", "", "tanis.png"];
+            var websites = ["", "", "", "", "https://www.linkedin.com/in/tanis-sarbatananda-a0406021b/"];
             var visit_period = ['Fall 2022', 
                                 'Visited Summer 2022', 
                                 'Visited Summer 2022', 
@@ -308,7 +309,7 @@
                 string_out += '<a id="#' + link_anchors[jdx] + '"></a>';
                 string_out += '<div class="card mb-3" style="max-width: 1000px; min-height: 160px;"><div class="row g-0 col-12"><div class="col-md-4 my-0">';
                 var photo = (photos[jdx].length > 0) ? 'glamor_photos/' + photos[jdx] : 'thumbnails/ws1.png';
-                string_out += '<img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '">';
+                string_out += '<a href="' + websites[jdx] + '" target="_blank"><img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '"></a>';
                 string_out += '</div><div class="col-md-8"><div class="card-body">';
                 string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
                 string_out += '<p class="card-text">' + affiliation[jdx] + "<br/>";
