@@ -44,6 +44,35 @@
             }
         }
 
+        .gallery-scroll {
+          display: flex;
+          margin: 0;
+          padding: 0;
+          background-color: #f8f8f8;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          overflow-x: scroll;
+        }
+
+        .gallery-item {
+          padding: .5rem;
+          font-size: 1.2rem;
+          text-align: center;
+          background-color: #f8f8f8;
+          color: #000000;
+          scroll-snap-align: center;
+          width: 1008px;
+          margin: 1rem 1rem 1rem;
+        }
+
+        .figure {
+            margin: 0 1rem 1rem;
+        }
+
+        b, strong {
+            color: #990000;
+        }
+
     </style>
 
     <!-- Defines .bib block -->
@@ -170,7 +199,60 @@
     <h3 style="text-align:left;color:#990000;margin-bottom:20px">Fun!</h3>
 
     <br/>
-    Coming soon! We are currently in the process of creating content for this page by having mandated fun.
+
+    <div class="gallery-scroll col-md-12">
+      <figure class="gallery-item col-md-12">
+        <img class="gallery-img" src="glamor_photos/fun_pics/2304_kennethhahn_1.jpg" height=360 width=500>
+        <img class="gallery-img" src="glamor_photos/fun_pics/2304_kennethhahn_2.jpg" height=360 width=450>
+        <figcaption><b>April 2023</b>: Lab cookout at Kenneth Hahn State Park, joined by the <a href="https://dill-lab.github.io/">DILL Lab</a>!</figcaption>
+      </figure>
+
+      <figure class="gallery-item col-md-6">
+        <img class="gallery-img" src="glamor_photos/fun_pics/2303_lunch.jpg" height=360 width=240>
+        <img class="gallery-img" src="glamor_photos/fun_pics/2302_lunch.jpg" height=360 width=240>
+        <figcaption><b>Spring 2023</b>: Lab lunches to celebrate Jesse (left) and dead presidents (right)</figcaption>
+      </figure>
+
+      <figure class="gallery-item col-md-6">
+        <img class="gallery-img" src="glamor_photos/fun_pics/2211_thanksgiving.jpg" height=360 width=480>
+        <figcaption><b>November 2022</b>: Thanksgiving dinner organized by Prof. Heather Culbertson</figcaption>
+      </figure>
+
+      <figure class="gallery-item col-md-12">
+        <img class="gallery-img" src="glamor_photos/fun_pics/2211_socalnlp_1.jpg" height=360 width=480>
+        <img class="gallery-img" src="glamor_photos/fun_pics/2211_socalnlp_2.jpg" height=360 width=480>
+        <figcaption><b>November 2022</b>: GLAMOR Lab and the rest of <a href="https://nlp.usc.edu/">USC NLP</a> attending <a href="https://socalnlp.github.io/symp22/index.html">SoCal NLP 2022</a> in Santa Barbara!</figcaption>
+      </figure>
+
+      <figure class="gallery-item col-md-12">
+        <img class="gallery-img" src="glamor_photos/fun_pics/2207_undergrads.jpg" height=360 width=480>
+        <figcaption><b>July 2022</b>: GLAMOR was lucky to host several talented visiting undergrads over the summer</figcaption>
+      </figure>
+
+      <figure class="gallery-item col-md-12">
+        <img class="gallery-img" src="glamor_photos/fun_pics/2204_labhike.jpg" height=360 width=480>
+        <img class="gallery-img" src="glamor_photos/fun_pics/2204_labhike_2.jpg" height=360 width=480>
+        <figcaption><b>April 2022</b>: Second GLAMOR lab outing! This time we hiked in Santa Monica</figcaption>
+      </figure>
+
+      <figure class="gallery-item col-md-12">
+        <img class="gallery-img" src="glamor_photos/fun_pics/2112_christmas.jpg" height=360 width=240>
+        <figcaption><b>December 2021</b>: Christmas dinner hosted by Jesse, joined by friends from <a href="https://robinjia.github.io/">Allegro Lab</a> and the <a href="https://viterbi-web.usc.edu/~cstheory/">Theory Group</a> at USC.</figcaption>
+      </figure>
+
+      <figure class="gallery-item col-md-12">
+        <img class="gallery-img" src="glamor_photos/fun_pics/2110_pumpkin.jpg" height=360 width=240>
+        <img class="gallery-img" src="glamor_photos/fun_pics/2110_halloween.jpg" height=360 width=480>
+        <figcaption><b>October 2021</b>: We carved a GLAMOR pumpkin and dressed up like Jesse for Halloween!</figcaption>
+      </figure>
+
+      <figure class="gallery-item col-md-12">
+        <img class="gallery-img" src="glamor_photos/fun_pics/2108_firstouting_1.jpg" height=360 width=480>
+        <img class="gallery-img" src="glamor_photos/fun_pics/2108_firstouting_2.jpg" height=360 width=480>
+        <figcaption><b>August 2021</b>: First GLAMOR Lab outing! Lunch and beach fun at Santa Monica.</figcaption>
+      </figure>
+
+    </div><!-- end gallery-scroll -->
 
     
 
