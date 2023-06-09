@@ -76,7 +76,7 @@ var phd_students = [
         "photos": "tejas.jpg",
         "roles": "2<sup>nd</sup> year PhD student",
         "note": "",
-        "ws_themes": ["Vision-Language Alignment", "VL Continual Learning"], 
+        "ws_themes": ["Vision-Language Alignment", "VL Continual Learning"],
         "ws": ["3", "3"]
     },
     {
