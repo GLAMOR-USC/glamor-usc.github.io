@@ -77,12 +77,12 @@
         }
 
         function populateGrantsAll() {
-            var years = ['2022'];
+            var years = ['Current Sponsors', 'Past Sponsors'];
 
             string_out = '';
             for(year_idx = 0; year_idx < years.length; year_idx++){
                 var year = years[year_idx];
-                //string_out += '<h4 style="text-align:left;color:#990000;margin-bottom:20px">' + year +'</h4>';
+                string_out += '<h3 style="text-align:left;color:#990000;margin-bottom:20px">' + year +'</h4>';
                 string_out += populateGrants(year);
                 string_out += '<br/>';
                 console.log(string_out)
@@ -136,14 +136,14 @@
                 'Project page being set up.',
                 '<a href="https://uscinteractionlab.web.app/project/accessibility">Project Page</a>',
                 '<a href="https://uscinteractionlab.web.app/project/ADRD">Project Page</a>',
-                '<a href="https://arxiv.org/abs/2206.09059">NeurIPS 2022 Publication</a>',
+                '<a href="https://arxiv.org/abs/2206.09059">NeurIPS 2022 Publication</a>, <a href="https://arxiv.org/abs/2304.02168">CoLLAs 2023 Publication</a>',
             ];
 
             var years = [
-                '2022',
-                '2022',
-                '2022',
-                '2022'
+                'Current Sponsors',
+                'Current Sponsors',
+                'Current Sponsors',
+                'Past Sponsors'
             ];
 
             var idxs = [...Array(grant_titles.length).keys()];
@@ -193,9 +193,9 @@
     <br/>
 
 
-    <h3 style="text-align:left;color:#990000;margin-bottom:20px">Sponsors</h3>
+    <!-- <h3 style="text-align:left;color:#990000;margin-bottom:20px">Sponsors</h3>
 
-    <p style="text-align:left;margin-bottom:0px">Here is a list of our grants:</p>    
+    <p style="text-align:left;margin-bottom:0px">Here is a list of our grants:</p>    -->
     <div class="col-md-12" id="publications"></div>
 
 
