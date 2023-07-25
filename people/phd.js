@@ -73,10 +73,10 @@ var phd_students = [
         "full_names": "Tejas Srinivasan",
         "display_names": "Tejas Srinivasan",
         "websites": "https://tejas1995.github.io/",
-        "photos": "tejas.jpg",
+        "photos": "tejas.png",
         "roles": "2<sup>nd</sup> year PhD student",
         "note": "",
-        "ws_themes": ["Vision-Language Alignment", "VL Continual Learning"],
+        "ws_themes": ["Vision-Language Reasoning", "Continual Learning"],
         "ws": ["3", "3"]
     },
     {
