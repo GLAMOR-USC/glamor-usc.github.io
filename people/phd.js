@@ -54,7 +54,7 @@ var phd_students = [
         "display_names": "Lee Kezar",
         "websites": "https://leekezar.github.io/",
         "photos": "lee.jpeg",
-        "roles": "4<sup>th</sup> year PhD student",
+        "roles": "5<sup>th</sup> year PhD student",
         "note": "",
         "ws_themes": ["VL for ASL"], 
         "ws": ["3"]
