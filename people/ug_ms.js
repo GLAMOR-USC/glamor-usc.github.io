@@ -2,7 +2,7 @@ var ug_students = [
     {
         "full_names": "Flora Jia",
         "display_names": "Flora Jia",
-        "year": "Junior Undergraduate @ USC",
+        "year": "Junior Undergraduate",
         "program": "Computer Science and Applied Mathematics",
         "ug_websites": "https://flora-jia-jfr.github.io/about/",
         "photos": "flora.jpg",
@@ -13,7 +13,7 @@ var ug_students = [
     {
         "full_names": "Allen Chang",
         "display_names": "Allen Chang",
-        "year": "Junior Undergraduate @ USC",
+        "year": "Junior Undergraduate",
         "program": "Computer Science, Applied & Computational Mathematics",
         "ug_websites": "https://www.cylumn.com/",
         "photos": "allen.jpg",
@@ -23,7 +23,7 @@ var ug_students = [
     {
         "full_names": "Elle Szabo",
         "display_names": "Elle Szabo",
-        "year": "Senior Undergraduate @ USC",
+        "year": "Senior Undergraduate",
         "program": "Computer Science",
         "ug_websites": "https://eszabo12.github.io/",
         "photos": "elle.jpg",
@@ -33,7 +33,7 @@ var ug_students = [
     {
         "full_names": "Chu Fang",
         "display_names": "Chu Fang",
-        "year": "Senior Undergraduate @ USC",
+        "year": "Senior Undergraduate",
         "program": "Computer Science (Games)",
         "ug_websites": "",
         "photos": "chu.jpeg",
@@ -43,8 +43,8 @@ var ug_students = [
     {
         "full_names": "Yuan Huang",
         "display_names": "Yuan Huang",
-        "year": "2nd year Masters Student @ USC",
-        "program": "Electrical and Computer Engineering <br/>Specializing in Machine Learning and Data Science",
+        "year": "2nd year Masters Student",
+        "program": "Electrical and Computer Engineering (ML and Data Science)",
         "ug_websites": "",
         "photos": "yuan.png",
         "ug_program": "",
@@ -53,7 +53,7 @@ var ug_students = [
     {
         "full_names": "Leslie Moreno",
         "display_names": "Leslie Moreno",
-        "year": "Sophomore Undergraduate @ USC",
+        "year": "Sophomore Undergraduate",
         "program": "Computer Engineering and Computer Science",
         "ug_websites": "",
         "photos": "leslie.jpeg",
@@ -63,7 +63,7 @@ var ug_students = [
     {
         "full_names": "James (Yuxi) Qian",
         "display_names": "James (Yuxi) Qian",
-        "year": "Freshman Undergraduate @ USC",
+        "year": "Freshman Undergraduate",
         "program": "Computer Science and Business Administration",
         "ug_websites": "",
         "photos": "james.jpg",
@@ -73,7 +73,7 @@ var ug_students = [
     {
         "full_names": "Aarav Monga",
         "display_names": "Aarav Monga",
-        "year": "Freshman Undergraduate @ USC",
+        "year": "Freshman Undergraduate",
         "program": "Computer Science",
         "ug_websites": "",
         "photos": "aarav.jpg",
@@ -83,7 +83,7 @@ var ug_students = [
     {
         "full_names": "Zain Merchant",
         "display_names": "Zain Merchant",
-        "year": "Junior Undergraduate @ USC",
+        "year": "Junior Undergraduate",
         "program": "Computer Science",
         "ug_websites": "",
         "photos": "zain.jpg",
@@ -93,7 +93,7 @@ var ug_students = [
     {
         "full_names": "Kyle He",
         "display_names": "Kyle He",
-        "year": "Sophomore Undergraduate @ USC",
+        "year": "Sophomore Undergraduate",
         "program": "Computer Science",
         "ug_websites": "https://kylehe.com/",
         "photos": "kyle.jpg",
@@ -103,7 +103,7 @@ var ug_students = [
     {
         "full_names": "Rohan Gupta",
         "display_names": "Rohan Gupta",
-        "year": "Senior Undergraduate @ USC",
+        "year": "Senior Undergraduate",
         "program": "Computer Science",
         "ug_websites": "",
         "photos": "rohan.jpg",
@@ -113,7 +113,7 @@ var ug_students = [
     {
         "full_names": "Yiming Tang",
         "display_names": "Yiming Tang",
-        "year": "1st Year Masters Student@ USC",
+        "year": "1st Year Masters Student",
         "program": "Computer Science (AI)",
         "ug_websites": "",
         "photos": "yiming.jpg",
