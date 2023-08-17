@@ -130,6 +130,7 @@
             var ug_websites = ug_students.map(x => x.ug_websites);
             var photos = ug_students.map(x => x.photos);
             var ug_program = ug_students.map(x => x.ug_program);
+            var phd_mentor = ug_students.map(x => x.phd_mentor);
 
             var idx = 0;
             var order = [...Array(full_names.length).keys()].map(x => ++x);
@@ -142,9 +143,10 @@
                 string_out += '<a href="' + ug_websites[jdx] + '" target="_blank"><img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '"></a>';
                 string_out += '</div><div class="col-md-8"><div class="card-body">';
                 string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
-                string_out += '<p class="card-text">' + year[jdx] + "<br/>";
+                string_out += '<p class="card-text">' + year[jdx] + ",";
                 string_out += program[jdx] + "<br/>";
                 string_out += ug_program[jdx] + "<br/>";
+                string_out += 'PhD Mentor: ' + phd_mentor[jdx];
                 string_out += '</p></div></div></div>';
 
                 // Load to left/right side based on parity, populating left side first in case of odd number
