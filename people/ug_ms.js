@@ -78,7 +78,7 @@ var ug_students = [
         "ug_websites": "",
         "photos": "aarav.jpg",
         "ug_program": "<a href=\"https://caisplusplus.usc.edu/\">CAIS++</a> Project",
-        "phd_mentor": "Anthony Liang"
+        "phd_mentor": "Tejas Srinivasan"
     },
     {
         "full_names": "Zain Merchant",
