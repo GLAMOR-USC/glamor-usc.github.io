@@ -1,42 +1,16 @@
     // Alumni [fixed order based on time of lab affiliation, most recent first]
     // Add new alumni to the start of these lists; students will be rendered
     
-var alumni = [
+var alumni_visiting = [
 
-    {
-        "full_names": "Julie Kim",
-        "display_names": "Julie Kim",
-        "affiliation": "Sophomore Undergraduate @ USC",
-        "photos": "julie-kim.jpg",
-        "websites": "",
-        "visit_period": "Fall 2022 - Spring 2023",
-        "program": "CURVE Fellowship",
-        "program_link": "https://viterbiundergrad.usc.edu/research/curve/",
-        "project_title": "A Machine Learning-Based ADRD Screening Tool",
-        "project_deliverable": "https://uscinteractionlab.web.app/project/ADRD",
-        "link_anchors": "2023julie"
-    },
-    {
-        "full_names": "Junu Song",
-        "display_names": "Junu Song",
-        "affiliation": "Junior Undergraduate @ USC",
-        "photos": "junusong.jpg",
-        "websites": "",
-        "visit_period": "Fall 2022",
-        "program": "CURVE Fellowship",
-        "program_link": "https://viterbiundergrad.usc.edu/research/curve/",
-        "project_title": "",
-        "project_deliverable": "",
-        "link_anchors": "2022junu"
-    },
     {
         "full_names": "Minh (Evelyn) Vu",
         "display_names": "Evelyn Vu",
-        "affiliation": "Junior @ Cal Poly Pomona",
+        "affiliation": "Cal Poly Pomona",
         "photos": "",
         "websites": "",
-        "visit_period": "Visited Summer 2022",
-        "program": "Robotics REU",
+        "visit_period": "Summer 2022",
+        "program": "Robotics REU Program",
         "program_link": "https://www.cs.usc.edu/reu/",
         "project_title": "Language Commands for a Virtual Agent",
         "project_deliverable": "reu/2022/vu.pdf",
@@ -45,11 +19,11 @@ var alumni = [
     {
         "full_names": "Kush Bhagat",
         "display_names": "Kush Bhagat",
-        "affiliation": "Sophomore @ University of Texas, Dallas",
+        "affiliation": "University of Texas, Dallas",
         "photos": "",
         "websites": "",
-        "visit_period": "Visited Summer 2022",
-        "program": "USC SURE",
+        "visit_period": "Summer 2022",
+        "program": "USC SURE Program",
         "program_link": "https://viterbiundergrad.usc.edu/research/sure/",
         "project_title": "Object Segmentation for ALFRED",
         "project_deliverable": "reu/2022/bhagat.pdf",
@@ -58,11 +32,11 @@ var alumni = [
     {
         "full_names": "Chidera Iwudyke",
         "display_names": "Chidera Iwudyke",
-        "affiliation": "Senior @ University of Maryland, Baltimore County",
+        "affiliation": "University of Maryland, Baltimore County",
         "photos": "",
         "websites": "",
-        "visit_period": "Visited Summer 2022",
-        "program": "USC SURE",
+        "visit_period": "Summer 2022",
+        "program": "USC SURE Program",
         "program_link": "https://viterbiundergrad.usc.edu/research/sure/",
         "project_title": "Gesture for Second Language Learning",
         "project_deliverable": "reu/2022/iwudyke.pdf",
@@ -71,15 +45,16 @@ var alumni = [
     {
         "full_names": "Tanis Sarbatananda",
         "display_names": "Tanis Sarbatananda",
-        "affiliation": "Junior @ Los Angeles City College",
+        "affiliation": "Los Angeles City College",
         "photos": "tanis.png",
         "websites": "https://www.linkedin.com/in/tanis-sarbatananda-a0406021b/",
-        "visit_period": "Visited Summer 2022",
-        "program": "USC/LACC ASSURE",
+        "visit_period": "Summer 2022",
+        "program": "USC/LACC ASSURE Program",
         "program_link": "",
         "project_title": "Towards Embodied Speech Recognition",
         "project_deliverable": "reu/2022/sarbatananda.pdf",
         "link_anchors": "2022sarbatananda"
-    }
+    },
+
 
 ]
