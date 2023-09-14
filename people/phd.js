@@ -86,7 +86,7 @@ var phd_students = [
         "photos": "jessez.jpeg",
         "roles": "4<sup>th</sup> year PhD student",
         "note": "(co-<a href=\"https://people.eecs.berkeley.edu/~ebiyik/\">Erdem Biyik</a>)",
-        "ws_themes": ["Foundation Models for Robot Learning"], 
+        "ws_themes": ["Large Pre-Trained Models for Robot Learning"], 
         "ws": ["4"]
     }
 
