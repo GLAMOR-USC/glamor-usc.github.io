@@ -53,7 +53,7 @@ var ug_students = [
     {
         "full_names": "Aarav Monga",
         "display_names": "Aarav Monga",
-        "year": "Freshman Undergraduate",
+        "year": "Sophomore Undergraduate",
         "program": "CS",
         "ug_websites": "",
         "photos": "aarav.jpg",
@@ -159,5 +159,35 @@ var ug_students = [
         "photos": "nidhi.png",
         "ug_program": "<a href=\"https://viterbiundergrad.usc.edu/research/curve/\">CURVE</a> Fellowship",
         "phd_mentor": "Lee Kezar"
+    },    
+    {
+        "full_names": "Chenfeng Huang",
+        "display_names": "Chenfeng Huang",
+        "year": "1st Year Masters Student",
+        "program": "Applied Data Science",
+        "ug_websites": "",
+        "photos": "chenfeng.jpg",
+        "ug_program": "",
+        "phd_mentor": "Ishika Singh"
+    },
+    {
+        "full_names": "Chengqi Xu",
+        "display_names": "Chengqi Xu",
+        "year": "1st Year Masters Student",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "chengqi.jpg",
+        "ug_program": "",
+        "phd_mentor": "Ishika Singh"
+    },
+    {
+        "full_names": "Wilbert Pumacay Huallpa",
+        "display_names": "Wilbert Huallpa",
+        "year": "2nd Year Masters Student",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "wilbert.png",
+        "ug_program": "",
+        "phd_mentor": "Ishika Singh"
     },    
 ]
