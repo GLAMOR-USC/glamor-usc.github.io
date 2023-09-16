@@ -176,7 +176,7 @@ var ug_students = [
         "year": "1st Year Masters Student",
         "program": "CS",
         "ug_websites": "",
-        "photos": "chengqi.jpg",
+        "photos": "chengqi.jpeg",
         "ug_program": "",
         "phd_mentor": "Ishika Singh"
     },
