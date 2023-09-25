@@ -182,7 +182,7 @@ var ug_students = [
     },
     {
         "full_names": "Wilbert Pumacay Huallpa",
-        "display_names": "Wilbert Huallpa",
+        "display_names": "Wilbert Pumacay",
         "year": "2nd Year Masters Student",
         "program": "CS",
         "ug_websites": "",
