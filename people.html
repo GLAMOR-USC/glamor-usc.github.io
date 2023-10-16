@@ -146,7 +146,9 @@
                 string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
                 string_out += '<p class="card-text">' + year[jdx] + ", ";
                 string_out += program[jdx] + "<br/>";
-                string_out += 'PhD Mentor: ' + phd_mentor[jdx] + "</br>";
+                if (phd_mentor[jdx].length > 0) {
+                    string_out += 'PhD Mentor: ' + phd_mentor[jdx] + "</br>";
+                }
                 string_out += ug_program[jdx];
                 string_out += '</p></div></div></div>';
 
@@ -168,6 +170,7 @@
             var link_anchors = alumni_ugms.map(x => x.link_anchors);
             var phd_mentor = alumni_ugms.map(x => x.phd_mentor);
             var websites = alumni_ugms.map(x => x.websites);
+            var next = alumni_ugms.map(x => x.next);
 
             var idx = 0;
             var order = [...Array(full_names.length).keys()].map(x => ++x);
@@ -197,8 +200,11 @@
                 }
                 //string_out += "PhD Mentor: " + phd_mentor[jdx] + ". ";
                 if (project_deliverable[jdx].length > 0) {
-                    string_out += '<a href="' + project_deliverable[jdx] + '">Project</a>';
+                    string_out += '<a href="' + project_deliverable[jdx] + '">Project</a>. ';
                 }
+                if (next[jdx].length > 0) {
+                    string_out += 'Next: ' + next[jdx] + '. ';
+                } 
                 string_out += '</li>';
 
                 document.getElementById("alumni_ugms").innerHTML += string_out;

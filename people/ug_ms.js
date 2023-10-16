@@ -189,5 +189,15 @@ var ug_students = [
         "photos": "wilbert.png",
         "ug_program": "",
         "phd_mentor": "Ishika Singh"
-    },    
+    },
+    {
+        "full_names": "Abhinav Gupta",
+        "display_names": "Abhinav Gupta",
+        "year": "Junior Undergraduate",
+        "program": "CS and Cognitive Science",
+        "ug_websites": "https://www.linkedin.com/in/abghinav/",
+        "photos": "",
+        "ug_program": "URAP Fellowship",
+        "phd_mentor": ""
+    },        
 ]

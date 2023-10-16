@@ -4,6 +4,19 @@
 var alumni_visiting = [
 
     {
+        "full_names": "Kaitlyn Kwan",
+        "display_names": "Kaitlyn Kwan",
+        "affiliation": "Arcadia High School",
+        "photos": "",
+        "websites": "",
+        "visit_period": "Summer 2023",
+        "program": "Viterbi K-12 SHINE Program",
+        "program_link": "https://viterbik12.usc.edu/shine/",
+        "project_title": "Accelerating PDDL Planning Time through Subgoal Generation Leveraging Large Language Models",
+        "project_deliverable": "https://viterbik12.usc.edu/wp-content/uploads/2023/08/10.-SHINE23-Kwan-K-Poster-Kaitlyn-Kwan.pdf",
+        "link_anchors": "2023kwan"
+    },
+    {
         "full_names": "Minh (Evelyn) Vu",
         "display_names": "Evelyn Vu",
         "affiliation": "Cal Poly Pomona",
