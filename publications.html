@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./main.css"> 
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="publications.js"></script>
 
     <base href="/">
 
@@ -83,85 +84,11 @@
 
         function populatePapers(year) {
             // List of all papers; add new item at top of each list
-            var paper_titles = [
-                "Chain-of-Questions Training with Latent Answers for Robust Multistep Question Answering",
-                "Exploring Strategies for Modeling Sign Language Phonology",
-                "Self-Supervised 3D Representation Learning for Robotics",
-                "ViSaRL: Visual Reinforcement Learning Guided by Human Saliency",
-                "I2I: Initializing Adapters with Improvised Knowledge",
-                "Multimodal Speech Recognition for Language-Guided Embodied Agents",
-                "Curriculum Learning for Data-Efficient Vision-Language Alignment",
-                "Iterative Vision-and-Language Navigation",
-                "Improving Sign Recognition with Phonology",
-                "Transformer Adapters for Robot Learning",
-                "Generalization Differences between End-to-End and Neuro-Symbolic Vision-Language Reasoning Systems",
-                "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
-                "CLiMB: A Continual Learning Benchmark for Vision-and-Language Tasks",
-            ];
-
-            var authors = [
-                "<b>Wang Zhu</b>, <b>Jesse Thomason</b>, Robin Jia",
-                "<b>Lee Kezar</b>, <b>Riley Carlin</b>, <b>Tejas Srinivasan</b>, Zed Sehyr, Naomi Caselli, <b>Jesse Thomason</b>",
-                "<b>Ishika Singh</b>, <b>Anthony Liang</b>, Mohit Shridhar, <b>Jesse Thomason</b>",
-                "<b>Anthony Liang</b>, <b>Jesse Thomason</b>, Erdem Bıyık", 
-                "<b>Tejas Srinivasan</b>, <b>Furong Jia</b>, Mohammad Rostami, <b>Jesse Thomason</b>",
-                "<b>Allen Chang</b>, Xiaoyuan Zhu, Aarav Monga, Seoho Ahn, <b>Tejas Srinivasan</b>, <b>Jesse Thomason</b>",
-                "<b>Tejas Srinivasan</b>, Xiang Ren, <b>Jesse Thomason</b>",
-                "Jacob Krantz, Shurjo Banerjee, <b>Wang Zhu</b>, Jason Corso, Peter Anderson, Stefan Lee, <b>Jesse Thomason</b>",
-                "<b>Lee Kezar</b>, <b>Jesse Thomason</b>, Zed Sevcikova Sehyr",
-                "<b>Anthony Liang</b>, <b>Ishika Singh</b>, Karl Pertsch, <b>Jesse Thomason</b>",
-                "<b>Wang Zhu</b>, <b>Jesse Thomason</b>, Robin Jia",
-                "<b>Ishika Singh</b>, Valts Blukis, Arsalan Mousavian, Ankit Goyal, Danfei Xu, Jonathan Tremblay, Dieter Fox, <b>Jesse Thomason</b>, Animesh Garg",
-                "<b>Tejas Srinivasan, Ting-Yun Chang, Leticia Pinto Alva</b>, Georgios Chochlakis, Mohammad Rostami, <b>Jesse Thomason</b>",
-            ];
-
-            var venues = [
-                "EMNLP 2023",
-                "ESANN 2023",
-                "Pretraining for Robotics Workshop, ICRA 2023",
-                "Pretraining for Robotics Workshop, ICRA 2023",
-                "CoLLAs 2023",
-                "Interspeech 2023",
-                "Workshop on Open-Domain Reasoning Under Multi-Modal Settings (O-DRUM), CVPR 2023",
-                "CVPR 2023",
-                "EACL 2023",
-                "Pretraining for Robot Learning Workshop, CoRL 2022",
-                "EMNLP 2022",
-                "ICRA 2023",
-                "NeurIPS 2022 Datasets and Benchmarks",
-            ];
-
-            var links = [
-                '<a href=\"https://arxiv.org/abs/2305.14901\">Paper</a>',
-                '<a href=\"https://www.esann.org/sites/default/files/proceedings/2023/ES2023-83.pdf\">Paper</a>',
-                '<a href=\"https://openreview.net/pdf?id=Hqb3t4Jqrk\">Paper</a>',
-                '<a href=\"https://openreview.net/pdf?id=1BrsVITE4PD\">Paper</a> / <a href=\"https://sites.google.com/view/visarl\">Website</a>',
-                '<a href=\"https://arxiv.org/abs/2304.02168\">Paper</a>',
-                '<a href=\"https://arxiv.org/abs/2302.14030\">Paper</a>',
-                '<a href=\"https://arxiv.org/abs/2207.14525\">Paper</a>',
-                '<a href=\"https://arxiv.org/abs/2210.03087\">Paper</a> / <a href=\"https://jacobkrantz.github.io/ivln\">Website</a> / <a href=\"https://github.com/Bill1235813/IVLN\">Code</a>',
-                '<a href=\"https://arxiv.org/abs/2302.05759\">Paper</a>',
-                '<a href=\"https://openreview.net/forum?id=H--wvRYBmF\">Paper</a>',
-                '<a href=\"https://arxiv.org/abs/2210.15037\">Paper</a>',
-                '<a href=\"https://arxiv.org/abs/2209.11302\">Paper</a> / <a href=\"https://progprompt.github.io/\">Website</a> / <a href=\"https://www.youtube.com/watch?v=cawHI_rYQoM\">Video</a>',
-                '<a href=\"https://arxiv.org/abs/2206.09059\">Paper</a> / <a href=\"https://github.com/GLAMOR-USC/CLiMB\">Code</a>',
-            ];
-
-            var years = [
-                '2023', 
-                '2023',
-                '2023',
-                '2023',
-                '2023',
-                '2023',
-                '2023',
-                '2023',
-                '2023',
-                '2022',
-                '2022',
-                '2023',
-                '2022',
-            ];
+            var paper_titles = papers.map(x => x.paper_title);
+            var authors = papers.map(x => x.authors);
+            var venues = papers.map(x => x.venue);
+            var links = papers.map(x => x.link);
+            var years = papers.map(x => x.year);
 
             var idxs = [...Array(paper_titles.length).keys()];
             filtered_idxs = idxs.filter(idx => years[idx] == year);
