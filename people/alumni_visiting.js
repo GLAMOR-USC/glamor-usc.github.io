@@ -4,6 +4,19 @@
 var alumni_visiting = [
 
     {
+        "full_names": "Caleb Pong",
+        "display_names": "Caleb Pong",
+        "affiliation": "Gretchen Whitney High School",
+        "photos": "",
+        "websites": "",
+        "visit_period": "Summer 2023",
+        "program": "Viterbi K-12 SHINE Program",
+        "program_link": "https://viterbik12.usc.edu/shine/",
+        "project_title": "",
+        "project_deliverable": "https://www.youtube.com/watch?v=4Pk3LH094pY&ab_channel=CalebPong",
+        "link_anchors": "2023kwan"
+    },
+    {
         "full_names": "Kaitlyn Kwan",
         "display_names": "Kaitlyn Kwan",
         "affiliation": "Arcadia High School",
