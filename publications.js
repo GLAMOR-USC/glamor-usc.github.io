@@ -1,5 +1,26 @@
 var papers = [
     {
+        "paper_title": "Selective \"Selective Prediction\": Reducing Unnecessary Abstention in Vision-Language Reasoning",
+        "authors": "<b>Tejas Srinivasan</b>, Jack Hessel, Tanmay Gupta, Bill Yuchen Lin, Yejin Choi, <b>Jesse Thomason</b>, Khyathi Raghavi Chandu",
+        "venue": "arXiV Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2402.15610\">Paper</a>', 
+        "year": "Pre-Prints",
+    },
+    {
+        "paper_title": "Efficient End-to-End Visual Document Understanding with Rationale Distillation",
+        "authors": "<b>Wang Zhu</b>, Alekh Agarwal, Mandar Joshi, Robin Jia, <b>Jesse Thomason</b>, Kristina Toutanova",
+        "venue": "arXiV Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2311.09612\">Paper</a>', 
+        "year": "Pre-Prints",
+    },
+    {
+        "paper_title": "Does VLN Pretraining Work with Nonsensical or Irrelevant Instructions?",
+        "authors": "<b>Wang Zhu</b>, <b>Ishika Singh</b>, Yuan Huang, Robin Jia, <b>Jesse Thomason</b>",
+        "venue": "Workshop on Open-Domain Reasoning Under Multi-Modal Settings (O-DRUM), CVPR 2023",
+        "link": '<a href=\"https://arxiv.org/abs/2311.17280\">Paper</a>', 
+        "year": "2023",
+    },
+    {
         "paper_title": "Exploring Strategies for Efficient Real-World VLN Evaluation",
         "authors": "<b>Abrar Anwar</b>, <b>Rohan Gupta</b>, <b>Elle Szabo</b>, <b>Jesse Thomason</b>",
         "venue": "LangRob Workshop, CoRL 2023",
