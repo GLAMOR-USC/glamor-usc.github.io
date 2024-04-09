@@ -1,5 +1,12 @@
 var papers = [
     {
+        "paper_title": "Which One? Leveraging Context Between Objects and Multiple Views for Language Grounding",
+        "authors": "Chancharik Mitra, <b>Abrar Anwar</b>, Rodolfo Corona, Dan Klein, Trevor Darrell, <b>Jesse Thomason</b>",
+        "venue": "NAACL 2024",
+        "link": '<a href=\"https://arxiv.org/abs/2311.06694\">Paper</a> / <a href=\"https://github.com/rcorona/magic_snare/\">Code</a>', 
+        "year": "2024",
+    },
+    {
         "paper_title": "Do Localization Methods Actually Localize Memorized Data in LLMs? A Tale of Two Benchmarks",
         "authors": "<b>Ting-Yun Chang</b>, <b>Jesse Thomason</b>, Robin Jia",
         "venue": "NAACL 2024",
