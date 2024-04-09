@@ -1,5 +1,19 @@
 var papers = [
     {
+        "paper_title": "Do Localization Methods Actually Localize Memorized Data in LLMs? A Tale of Two Benchmarks",
+        "authors": "<b>Ting-Yun Chang</b>, <b>Jesse Thomason</b>, Robin Jia",
+        "venue": "NAACL 2024",
+        "link": '<a href=\"https://arxiv.org/abs/2311.09060\">Paper</a>, <a href=\"https://github.com/terarachang/MemPi\">Code</a>', 
+        "year": "2024",
+    },
+    {
+        "paper_title": "TwoStep: Multi-agent Task Planning using Classical Planners and Large Language Models",
+        "authors": "<b>Ishika Singh</b>, David Traum, <b>Jesse Thomason</b>",
+        "venue": "arXiV Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2403.17246\">Paper</a>, <a href=\"https://glamor-usc.github.io/twostep/\">Website</a>', 
+        "year": "Pre-Prints",
+    },
+    {
         "paper_title": "Selective \"Selective Prediction\": Reducing Unnecessary Abstention in Vision-Language Reasoning",
         "authors": "<b>Tejas Srinivasan</b>, Jack Hessel, Tanmay Gupta, Bill Yuchen Lin, Yejin Choi, <b>Jesse Thomason</b>, Khyathi Raghavi Chandu",
         "venue": "arXiV Pre-Print",
@@ -9,9 +23,9 @@ var papers = [
     {
         "paper_title": "Efficient End-to-End Visual Document Understanding with Rationale Distillation",
         "authors": "<b>Wang Zhu</b>, Alekh Agarwal, Mandar Joshi, Robin Jia, <b>Jesse Thomason</b>, Kristina Toutanova",
-        "venue": "arXiV Pre-Print",
+        "venue": "NAACL 2024",
         "link": '<a href=\"https://arxiv.org/abs/2311.09612\">Paper</a>', 
-        "year": "Pre-Prints",
+        "year": "2024",
     },
     {
         "paper_title": "Does VLN Pretraining Work with Nonsensical or Irrelevant Instructions?",
@@ -39,6 +53,13 @@ var papers = [
         "authors": "<b>Lee Kezar</b>, <b>Riley Carlin</b>, <b>Tejas Srinivasan</b>, Zed Sehyr, Naomi Caselli, <b>Jesse Thomason</b>",
         "venue": "ESANN 2023",
         "link": '<a href=\"https://www.esann.org/sites/default/files/proceedings/2023/ES2023-83.pdf\">Paper</a>', 
+        "year": "2023",
+    },
+    {
+        "paper_title": "The Sem-Lex Benchmark: Modeling ASL Signs and Their Phonemes",
+        "authors": "<b>Lee Kezar</b>, Elana Pontecorvo, Adele Daniels, Connor Baer, Ruth Ferster, Lauren Berger, <b>Jesse Thomason</b>, Zed Sehyr, and Naomi Caselli",
+        "venue": "ASSETS 2023",
+        "link": '<a href=\"https://dl.acm.org/doi/pdf/10.1145/3597638.3608408\">Paper</a>, <a href=\"https://github.com/terarachang/MemPi\">Code</a>', 
         "year": "2023",
     },
     {
