@@ -3,14 +3,14 @@ var papers = [
         "paper_title": "Do Localization Methods Actually Localize Memorized Data in LLMs? A Tale of Two Benchmarks",
         "authors": "<b>Ting-Yun Chang</b>, <b>Jesse Thomason</b>, Robin Jia",
         "venue": "NAACL 2024",
-        "link": '<a href=\"https://arxiv.org/abs/2311.09060\">Paper</a>, <a href=\"https://github.com/terarachang/MemPi\">Code</a>', 
+        "link": '<a href=\"https://arxiv.org/abs/2311.09060\">Paper</a> / <a href=\"https://github.com/terarachang/MemPi\">Code</a>', 
         "year": "2024",
     },
     {
         "paper_title": "TwoStep: Multi-agent Task Planning using Classical Planners and Large Language Models",
         "authors": "<b>Ishika Singh</b>, David Traum, <b>Jesse Thomason</b>",
         "venue": "arXiV Pre-Print",
-        "link": '<a href=\"https://arxiv.org/abs/2403.17246\">Paper</a>, <a href=\"https://glamor-usc.github.io/twostep/\">Website</a>', 
+        "link": '<a href=\"https://arxiv.org/abs/2403.17246\">Paper</a> / <a href=\"https://glamor-usc.github.io/twostep/\">Website</a>', 
         "year": "Pre-Prints",
     },
     {
