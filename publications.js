@@ -1,5 +1,12 @@
 var papers = [
     {
+        "paper_title": "THE COLOSSEUM: A Benchmark for Evaluating Generalization for Robotic Manipulation",
+        "authors": "<b>Wilbert Pumacay</b>, <b>Ishika Singh</b>, Jiafei Duan, Ranjay Krishna, <b>Jesse Thomason</b>, Dieter Fox",
+        "venue": "arXiV Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2402.08191\">Paper</a> / <a href=\"https://github.com/robot-colosseum/robot-colosseum\">Code</a> / <a href=\"https://robot-colosseum.github.io/\">Website</a>', 
+        "year": "2024",
+    },
+    {
         "paper_title": "Which One? Leveraging Context Between Objects and Multiple Views for Language Grounding",
         "authors": "Chancharik Mitra, <b>Abrar Anwar</b>, Rodolfo Corona, Dan Klein, Trevor Darrell, <b>Jesse Thomason</b>",
         "venue": "NAACL 2024",
