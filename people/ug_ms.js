@@ -11,16 +11,6 @@ var ug_students = [
         
     },
     {
-        "full_names": "Allen Chang",
-        "display_names": "Allen Chang",
-        "year": "Senior Undergraduate",
-        "program": "CS and Applied Math",
-        "ug_websites": "https://www.cylumn.com/",
-        "photos": "allen.jpg",
-        "ug_program": "<a href=\"https://caisplusplus.usc.edu/\">CAIS++</a> Project",
-        "phd_mentor": "Tejas Srinivasan"
-    },
-    {
         "full_names": "Leslie Moreno",
         "display_names": "Leslie Moreno",
         "year": "Sophomore Undergraduate",
