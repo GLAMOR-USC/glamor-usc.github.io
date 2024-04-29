@@ -76,8 +76,8 @@ var phd_students = [
         "photos": "tejas.png",
         "roles": "3<sup>rd</sup> year PhD student",
         "note": "",
-        "ws_themes": ["Vision-Language Reasoning", "Continual Learning"],
-        "ws": ["3", "3"]
+        "ws_themes": ["Reliable Human-AI Interaction", "Vision+Language"],
+        "ws": ["5", "3"]
     },
     {
         "full_names": "Jesse Zhang",
