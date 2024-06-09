@@ -1,8 +1,15 @@
 var papers = [
     {
+        "paper_title": "Selective \"Selective Prediction\": Reducing Unnecessary Abstention in Vision-Language Reasoning",
+        "authors": "<b>Tejas Srinivasan</b>, Jack Hessel, Tanmay Gupta, Bill Yuchen Lin, Yejin Choi, <b>Jesse Thomason</b>, Khyathi Raghavi Chandu",
+        "venue": "ACL Findings 2024",
+        "link": '<a href=\"https://arxiv.org/abs/2402.15610\">Paper</a>', 
+        "year": "2024",
+    },
+    {
         "paper_title": "THE COLOSSEUM: A Benchmark for Evaluating Generalization for Robotic Manipulation",
         "authors": "<b>Wilbert Pumacay</b>, <b>Ishika Singh</b>, Jiafei Duan, Ranjay Krishna, <b>Jesse Thomason</b>, Dieter Fox",
-        "venue": "arXiV Pre-Print",
+        "venue": "RSS 2024",
         "link": '<a href=\"https://arxiv.org/abs/2402.08191\">Paper</a> / <a href=\"https://github.com/robot-colosseum/robot-colosseum\">Code</a> / <a href=\"https://robot-colosseum.github.io/\">Website</a>', 
         "year": "2024",
     },
@@ -25,13 +32,6 @@ var papers = [
         "authors": "<b>Ishika Singh</b>, David Traum, <b>Jesse Thomason</b>",
         "venue": "arXiV Pre-Print",
         "link": '<a href=\"https://arxiv.org/abs/2403.17246\">Paper</a> / <a href=\"https://glamor-usc.github.io/twostep/\">Website</a>', 
-        "year": "Pre-Prints",
-    },
-    {
-        "paper_title": "Selective \"Selective Prediction\": Reducing Unnecessary Abstention in Vision-Language Reasoning",
-        "authors": "<b>Tejas Srinivasan</b>, Jack Hessel, Tanmay Gupta, Bill Yuchen Lin, Yejin Choi, <b>Jesse Thomason</b>, Khyathi Raghavi Chandu",
-        "venue": "arXiV Pre-Print",
-        "link": '<a href=\"https://arxiv.org/abs/2402.15610\">Paper</a>', 
         "year": "Pre-Prints",
     },
     {

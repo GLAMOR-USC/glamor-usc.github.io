@@ -2,12 +2,25 @@
     // Add new alumni to the start of these lists; students will be rendered
     
 var alumni_ugms = [
-
+    {
+        "full_names": "Allen Chang",
+        "display_names": "Allen Chang",
+        "year": "Undergraduate @ USC",
+        "visit_period": "Fall 2022 - Spring 2023",
+        "websites": "https://www.cylumn.com/",
+        "program": "",
+        "program_link": "",
+        "project_title": "",
+        "project_deliverable": "https://arxiv.org/abs/2302.14030",
+        "phd_mentor": "Tejas Srinivasan",
+        "next": "PhD in Computer and Information Science, UPenn, with an <a href=\"https://www.nsfgrfp.org/\">NSF Graduate Research Fellowship</a>",
+        "link_anchors": ""
+    },
     {
         "full_names": "Riley Carlin",
         "display_names": "Riley Carlin",
         "affiliation": "Undergraduate @ USC",
-        "visit_period": "Fall 2022 - Fall 2023",
+        "visit_period": "Fall 2022 - Spring 2023",
         "websites": "https://www.linkedin.com/in/riley-carlin/",
         "program": "",
         "program_link": "",
