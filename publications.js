@@ -1,5 +1,12 @@
 var papers = [
     {
+        "paper_title": "Language Models can Infer Action Semantics for Classical Planners from Environment Feedback",
+        "authors": "<b>Wang Zhu</b>, <b>Ishika Singh</b>, Robin Jia, <b>Jesse Thomason</b>",
+        "venue": "arXiV Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2406.02791\">Paper</a>', 
+        "year": "Pre-Prints",
+    },
+    {
         "paper_title": "Selective \"Selective Prediction\": Reducing Unnecessary Abstention in Vision-Language Reasoning",
         "authors": "<b>Tejas Srinivasan</b>, Jack Hessel, Tanmay Gupta, Bill Yuchen Lin, Yejin Choi, <b>Jesse Thomason</b>, Khyathi Raghavi Chandu",
         "venue": "ACL Findings 2024",
