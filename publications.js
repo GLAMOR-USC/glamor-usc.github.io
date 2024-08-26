@@ -1,5 +1,12 @@
 var papers = [
     {
+        "paper_title": "Generating Contextually-Relevant Navigation Instructions for Blind and Low Vision People",
+        "authors": "<b>Zain Merchant</b>, <b>Abrar Anwar</b>, <b>Emily Wang</b>, Souti Chattopadhyay, <b>Jesse Thomason</b>",
+        "venue": "RO-MAN 2024 Late Breaking Report",
+        "link": '<a href=\"https://arxiv.org/abs/2407.08219\">Paper</a>', 
+        "year": "2024",
+    },
+    {
         "paper_title": "Language Models can Infer Action Semantics for Classical Planners from Environment Feedback",
         "authors": "<b>Wang Zhu</b>, <b>Ishika Singh</b>, Robin Jia, <b>Jesse Thomason</b>",
         "venue": "arXiV Pre-Print",
