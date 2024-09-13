@@ -1,5 +1,15 @@
 var ug_students = [
     {
+        "full_names": "David Bai",
+        "display_names": "David Bai",
+        "year": "Sophomore Undergraduate",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "davidbai.jpeg",
+        "ug_program": "<a href=\"https://viterbiundergrad.usc.edu/research/curve/\">CURVE</a> Fellowship",
+        "phd_mentor": "Ishika Singh"
+    },
+    {
         "full_names": "Nidhi Munikote",
         "display_names": "Nidhi Munikote",
         "year": "Junior Undergraduate",
