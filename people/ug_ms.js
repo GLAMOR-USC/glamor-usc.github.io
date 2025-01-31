@@ -1,5 +1,65 @@
 var ug_students = [
     {
+        "full_names": "Miaosen Chai",
+        "display_names": "Miaosen Chai",
+        "year": "Junior Undergraduate",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "",
+        "ug_program": "",
+        "phd_mentor": "Wang Zhu",
+    },
+    {
+        "full_names": "Tony Yi",
+        "display_names": "Tony Yi",
+        "year": "Junior Undergraduate",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "",
+        "ug_program": "",
+        "phd_mentor": "Wang Zhu",
+    },
+    {
+        "full_names": "Mann Patel",
+        "display_names": "Mann Patel",
+        "year": "Masters Student",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "",
+        "ug_program": "",
+        "phd_mentor": "Tejas Srinivasan"
+    },
+    {
+        "full_names": "Keyu He",
+        "display_names": "Keyu He",
+        "year": "Senior Undergraduate",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "",
+        "ug_program": "",
+        "phd_mentor": "Tejas Srinivasan"
+    },
+    {
+        "full_names": "Matthew Salaway",
+        "display_names": "Matthew Salaway",
+        "year": "Senior Undergraduate",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "",
+        "ug_program": "",
+        "phd_mentor": "Tejas Srinivasan"
+    },
+    {
+        "full_names": "Ryan Nene",
+        "display_names": "Ryan Nene",
+        "year": "Sophomore Undergraduate",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "ryan_nene.jpeg",
+        "ug_program": "",
+        "phd_mentor": "Abrar Anwar"
+    },
+    {
         "full_names": "David Bai",
         "display_names": "David Bai",
         "year": "Sophomore Undergraduate",
@@ -22,7 +82,7 @@ var ug_students = [
     {
         "full_names": "Leslie Moreno",
         "display_names": "Leslie Moreno",
-        "year": "Junior Undergraduate",
+        "year": "Senior Undergraduate",
         "program": "Computer Engineering and CS",
         "ug_websites": "",
         "photos": "leslie.jpeg",
@@ -37,16 +97,6 @@ var ug_students = [
         "ug_websites": "",
         "photos": "zain.jpg",
         "ug_program": "<a href=\"https://viterbiundergrad.usc.edu/research/curve/\">CURVE</a> Fellowship",
-        "phd_mentor": "Abrar Anwar"
-    },
-    {
-        "full_names": "Kyle He",
-        "display_names": "Kyle He",
-        "year": "Sophomore Undergraduate",
-        "program": "CS",
-        "ug_websites": "https://kylehe.com/",
-        "photos": "kyle.jpg",
-        "ug_program": "",
         "phd_mentor": "Abrar Anwar"
     },
     {

@@ -1,5 +1,40 @@
 var papers = [
     {
+        "paper_title": "M3PT: A Transformer for Multimodal, Multi-Party Social Signal Prediction with Person-aware Blockwise Attention",
+        "authors": "<b>Yiming Tang</b>, <b>Abrar Anwar</b>, <b>Jesse Thomason</b>",
+        "venue": "arXiV Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2501.13416\">Paper</a>',
+        "year": "Pre-Prints",
+    },
+    {
+        "paper_title": "Better Slow than Sorry: Introducing Positive Friction for Reliable Dialogue Systems",
+        "authors": "Mert İnan, Anthony Sicilia, Suvodip Dey, Vardhan Dongre, <b>Tejas Srinivasan</b>, <b>Jesse Thomason</b>, Gökhan Tür, Dilek Hakkani-Tür, Malihe Alikhani",
+        "venue": "arXiV Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2501.17348\">Paper</a>',
+        "year": "Pre-Prints",
+    }, 
+    {
+        "paper_title": "The American Sign Language Knowledge Graph: Infusing ASL Models with Linguistic Knowledge",
+        "authors": "<b>Lee Kezar</b>, <b>Nidhi Munikote</b>, <b>Zian Zeng</b>, Zed Sehyr, Naomi Caselli, <b>Jesse Thomason</b>",
+        "venue": "NAACL 2025",
+        "link": '<a href=\"https://arxiv.org/abs/2411.03568\">Paper</a>',
+        "year": "2025",
+    }, 
+    {
+        "paper_title": "When Parts Are Greater Than Sums: Individual LLM Components Can Outperform Full Models",
+        "authors": "<b>Ting-Yun Chang</b>, <b>Jesse Thomason</b>, Robin Jia",
+        "venue": "EMNLP 2024",
+        "link": '<a href=\"https://aclanthology.org/2024.emnlp-main.574.pdf\">Paper</a> / <a href=\"https://github.com/terarachang/LLMDecomp\">Code</a> / <a href=\"https://terarachang.github.io/projects/llm-decomp.html\">Blogpost</a>',
+        "year": "2024",
+    }, 
+    {
+        "paper_title": "Contrast Sets for Evaluating Language-Guided Robot Policies",
+        "authors": "<b>Abrar Anwar</b>, <b>Rohan Gupta</b>, <b>Jesse Thomason</b>",
+        "venue": "CoRL 2024",
+        "link": '<a href=\"https://arxiv.org/abs/2406.13636\">Paper</a>',
+        "year": "2024",
+    },
+    {
         "paper_title": "Generating Contextually-Relevant Navigation Instructions for Blind and Low Vision People",
         "authors": "<b>Zain Merchant</b>, <b>Abrar Anwar</b>, <b>Emily Wang</b>, Souti Chattopadhyay, <b>Jesse Thomason</b>",
         "venue": "RO-MAN 2024 Late Breaking Report",
@@ -9,9 +44,9 @@ var papers = [
     {
         "paper_title": "Language Models can Infer Action Semantics for Classical Planners from Environment Feedback",
         "authors": "<b>Wang Zhu</b>, <b>Ishika Singh</b>, Robin Jia, <b>Jesse Thomason</b>",
-        "venue": "arXiV Pre-Print",
+        "venue": "NAACL 2025",
         "link": '<a href=\"https://arxiv.org/abs/2406.02791\">Paper</a>', 
-        "year": "Pre-Prints",
+        "year": "2025",
     },
     {
         "paper_title": "Selective \"Selective Prediction\": Reducing Unnecessary Abstention in Vision-Language Reasoning",

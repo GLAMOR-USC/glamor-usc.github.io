@@ -36,8 +36,8 @@ var phd_students = [
         "photos": "abrar.png",
         "roles": "4<sup>th</sup> year PhD student",
         "note": "",
-        "ws_themes": ["Social Understanding", "Assistive Robotics"], 
-        "ws": ["5", "4"]
+        "ws_themes": ["Robot Evaluation"], 
+        "ws": ["4"]
     },
     {
         "full_names": "Lee Kezar",

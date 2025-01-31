@@ -3,6 +3,20 @@
     
 var alumni_ugms = [
     {
+        "full_names": "Kyle He",
+        "display_names": "Kyle He",
+        "year": "Undergraduate @ USC",
+        "visit_period": "Fall 2023 - Spring 2024",
+        "websites": "https://kylehe.com/",
+        "program": "",
+        "program_link": "",
+        "project_title": "",
+        "project_deliverable": "",
+        "phd_mentor": "Abrar Anwar",
+        "next": "",
+        "link_anchors": ""
+    },
+    {
         "full_names": "Chenfeng Huang",
         "display_names": "Chenfeng Huang",
         "year": "Masters @ USC",

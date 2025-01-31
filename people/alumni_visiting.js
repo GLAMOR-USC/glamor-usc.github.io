@@ -4,6 +4,32 @@
 var alumni_visiting = [
 
     {
+        "full_names": "Shaurya Mittal",
+        "display_names": "Shaurya Mittal",
+        "affiliation": "Sage Hill High School",
+        "photos": "",
+        "websites": "",
+        "visit_period": "Summer 2024",
+        "program": "Viterbi K-12 SHINE Program",
+        "program_link": "https://viterbik12.usc.edu/shine/",
+        "project_title": "",
+        "project_deliverable": "",
+        "link_anchors": "2024mittal"
+    },
+    {
+        "full_names": "Hanul Ju",
+        "display_names": "Hanul Ju",
+        "affiliation": "Geffen Academy",
+        "photos": "",
+        "websites": "",
+        "visit_period": "Summer 2024",
+        "program": "Viterbi K-12 SHINE Program",
+        "program_link": "https://viterbik12.usc.edu/shine/",
+        "project_title": "",
+        "project_deliverable": "",
+        "link_anchors": "2024mittal"
+    },
+    {
         "full_names": "Caleb Pong",
         "display_names": "Caleb Pong",
         "affiliation": "Gretchen Whitney High School",
