@@ -35,17 +35,17 @@ var ug_students = [
         "year": "Senior Undergraduate",
         "program": "CS",
         "ug_websites": "",
-        "photos": "",
+        "photos": "keyu.jpg",
         "ug_program": "",
         "phd_mentor": "Tejas Srinivasan"
     },
     {
         "full_names": "Matthew Salaway",
         "display_names": "Matthew Salaway",
-        "year": "Senior Undergraduate",
+        "year": "Senior Undergraduate (PDP)",
         "program": "CS",
         "ug_websites": "",
-        "photos": "",
+        "photos": "matthew_salaway.jpg",
         "ug_program": "",
         "phd_mentor": "Tejas Srinivasan"
     },
@@ -118,16 +118,6 @@ var ug_students = [
         "photos": "yiming.jpg",
         "ug_program": "",
         "phd_mentor": "Abrar Anwar"
-    },
-    {
-        "full_names": "Chengqi Xu",
-        "display_names": "Chengqi Xu",
-        "year": "1st Year Masters Student",
-        "program": "CS",
-        "ug_websites": "",
-        "photos": "chengqi.jpeg",
-        "ug_program": "",
-        "phd_mentor": "Ishika Singh"
     },
     {
         "full_names": "Abhinav Gupta",

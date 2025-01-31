@@ -17,6 +17,20 @@ var alumni_ugms = [
         "link_anchors": ""
     },
     {
+        "full_names": "Chengqi Xu",
+        "display_names": "Chengqi Xu",
+        "year": "Masters @ USC",
+        "visit_period": "Fall 2023 - Fall 2024",
+        "websites": "",
+        "program": "",
+        "program_link": "",
+        "project_title": "",
+        "project_deliverable": "",
+        "phd_mentor": "Ishika Singh",
+        "next": "",
+        "link_anchors": ""
+    },    
+    {
         "full_names": "Chenfeng Huang",
         "display_names": "Chenfeng Huang",
         "year": "Masters @ USC",
