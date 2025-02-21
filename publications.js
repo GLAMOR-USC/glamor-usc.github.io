@@ -1,5 +1,19 @@
 var papers = [
     {
+        "paper_title": "Adjust for Trust: Mitigating Trust-Induced Inappropriate Reliance on AI Assistance",
+        "authors": "<b>Tejas Srinivasan</b>, <b>Jesse Thomason</b>",
+        "venue": "arXiV Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2502.13321\">Paper</a>',
+        "year": "Pre-Prints",
+    },
+    {
+        "paper_title": "Efficient Evaluation of Multi-Task Robot Policies With Active Experiment Selection",
+        "authors": "<b>Abrar Anwar</b>, <b>Rohan Gupta</b>, <b>Zain Merchant</b>, Sayan Ghosh, Willie Neiswanger, <b>Jesse Thomason</b>",
+        "venue": "arXiV Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2502.09829\">Paper</a>',
+        "year": "Pre-Prints",
+    },
+    {
         "paper_title": "M3PT: A Transformer for Multimodal, Multi-Party Social Signal Prediction with Person-aware Blockwise Attention",
         "authors": "<b>Yiming Tang</b>, <b>Abrar Anwar</b>, <b>Jesse Thomason</b>",
         "venue": "arXiV Pre-Print",
