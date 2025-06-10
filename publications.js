@@ -1,5 +1,26 @@
 var papers = [
     {
+        "paper_title": "From Calibration to Collaboration: LLM Uncertainty Quantification Should Be More Human-Centered",
+        "authors": "Siddartha Devic, <b>Tejas Srinivasan</b>, <b>Jesse Thomason</b>, Willie Neiswanger, Vatsal Sharan",
+        "venue": "arXiv Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2506.07461\">Paper</a>',
+        "year": "Pre-Prints",
+    },
+    {
+        "paper_title": "HAND Me the Data: Fast Robot Adaptation via Hand Path Retrieval",
+        "authors": "<b>Matthew Hong</b>, Anthony Liang, <b>Kevin Kim</b>, <b>Harshitha Rajaprakash</b>, <b>Jesse Thomason</b>, Erdem Bıyık, <b>Jesse Zhang</b>",
+        "venue": "arXiv Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2505.20455\">Paper</a> / <a href=\"https://liralab.usc.edu/handretrieval/\">Website</a>',
+        "year": "Pre-Prints",
+    },
+    {
+        "paper_title": "ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations",
+        "authors": "Jiahui Zhang, <b>Yusen Luo</b>, <b>Abrar Anwar</b>, Sumedh Anand Sontakke, Joseph J Lim, <b>Jesse Thomason</b>, Erdem Biyik, <b>Jesse Zhang</b>",
+        "venue": "arXiv Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2505.10911\">Paper</a> / <a href=\"https://rewind-reward.github.io/\">Website</a>',
+        "year": "Pre-Prints",
+    },
+    {
         "paper_title": "Adjust for Trust: Mitigating Trust-Induced Inappropriate Reliance on AI Assistance",
         "authors": "<b>Tejas Srinivasan</b>, <b>Jesse Thomason</b>",
         "venue": "arXiv Pre-Print",
@@ -23,9 +44,9 @@ var papers = [
     {
         "paper_title": "Better Slow than Sorry: Introducing Positive Friction for Reliable Dialogue Systems",
         "authors": "Mert İnan, Anthony Sicilia, Suvodip Dey, Vardhan Dongre, <b>Tejas Srinivasan</b>, <b>Jesse Thomason</b>, Gökhan Tür, Dilek Hakkani-Tür, Malihe Alikhani",
-        "venue": "arXiv Pre-Print",
+        "venue": "TACL 2025",
         "link": '<a href=\"https://arxiv.org/abs/2501.17348\">Paper</a>',
-        "year": "Pre-Prints",
+        "year": "2025",
     }, 
     {
         "paper_title": "The American Sign Language Knowledge Graph: Infusing ASL Models with Linguistic Knowledge",
