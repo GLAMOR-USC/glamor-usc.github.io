@@ -16,9 +16,9 @@ var papers = [
     {
         "paper_title": "ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations",
         "authors": "Jiahui Zhang, <b>Yusen Luo</b>, <b>Abrar Anwar</b>, Sumedh Anand Sontakke, Joseph J Lim, <b>Jesse Thomason</b>, Erdem Biyik, <b>Jesse Zhang</b>",
-        "venue": "arXiv Pre-Print",
+        "venue": "CoRL 2025",
         "link": '<a href=\"https://arxiv.org/abs/2505.10911\">Paper</a> / <a href=\"https://rewind-reward.github.io/\">Website</a>',
-        "year": "Pre-Prints",
+        "year": "2025",
     },
     {
         "paper_title": "Adjust for Trust: Mitigating Trust-Induced Inappropriate Reliance on AI Assistance",
@@ -30,9 +30,9 @@ var papers = [
     {
         "paper_title": "Efficient Evaluation of Multi-Task Robot Policies With Active Experiment Selection",
         "authors": "<b>Abrar Anwar</b>, <b>Rohan Gupta</b>, <b>Zain Merchant</b>, Sayan Ghosh, Willie Neiswanger, <b>Jesse Thomason</b>",
-        "venue": "arXiv Pre-Print",
+        "venue": "CoRL 2025",
         "link": '<a href=\"https://arxiv.org/abs/2502.09829\">Paper</a>',
-        "year": "Pre-Prints",
+        "year": "2025",
     },
     {
         "paper_title": "M3PT: A Transformer for Multimodal, Multi-Party Social Signal Prediction with Person-aware Blockwise Attention",
