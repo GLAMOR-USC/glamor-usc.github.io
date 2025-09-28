@@ -12,6 +12,7 @@
 
     <script src="people/phd.js"></script>
     <script src="people/ug_ms.js"></script>
+    <script src="people/alumni_phd.js"></script>
     <script src="people/alumni_ugms.js"></script>
     <script src="people/alumni_visiting.js"></script>
 
@@ -158,17 +159,41 @@
                 side.innerHTML += string_out;
             }
 
+            // Alumni PhD
+            var full_names = alumni_phd.map(x => x.full_names);
+            var display_names = alumni_phd.map(x => x.display_names);
+            var websites = alumni_phd.map(x => x.websites);
+            var years = alumni_phd.map(x => x.years);
+            var thesis_title = alumni_phd.map(x => x.thesis_title);
+            var next = alumni_phd.map(x => x.next);
+            var idx = 0;
+            var order = [...Array(full_names.length).keys()].map(x => ++x);
+            //order.reverse();
+            document.getElementById("alumni_phd").innerHTML += '<ul>'
+            for (idx=0; idx < full_names.length; idx++) {
+                jdx = order[idx] - 1;
+                var string_out = '<li style="margin:0px;">';
+                if (websites[jdx].length > 0) {
+                    string_out += '<b style="color:#990000;"><a href="' + websites[jdx] + '">' + display_names[jdx] + '</a></b> (' + years[jdx] + ')<br>' ;
+                } else {
+                    string_out += '<b style="color:#990000;">' + display_names[jdx] + '</b> (' + years[jdx] + ')<br>' ;
+                }
+                string_out += '<div style="margin-left: 1.3em;">'
+                string_out += 'Thesis title: <i>' + thesis_title[jdx] + '</i> <br>';
+                string_out += 'Next: ' + next[jdx];
+                string_out += '</div></li>';
+                document.getElementById("alumni_phd").innerHTML += string_out;
+            }
+            document.getElementById("alumni_phd").innerHTML += '</br></ul>'
+
+
             // Alumni Undergraduates
             var full_names = alumni_ugms.map(x => x.full_names);
             var display_names = alumni_ugms.map(x => x.display_names);
-            var affiliation = alumni_ugms.map(x => x.affiliation);
             var visit_period = alumni_ugms.map(x => x.visit_period);
             var program = alumni_ugms.map(x => x.program);
             var program_link = alumni_ugms.map(x => x.program_link);
-            var project_title = alumni_ugms.map(x => x.project_title);
-            var project_deliverable = alumni_ugms.map(x => x.project_deliverable);
             var link_anchors = alumni_ugms.map(x => x.link_anchors);
-            var phd_mentor = alumni_ugms.map(x => x.phd_mentor);
             var websites = alumni_ugms.map(x => x.websites);
             var next = alumni_ugms.map(x => x.next);
 
@@ -185,22 +210,18 @@
                 //string_out += '</div><div class="col-md-8"><div class="card-body">';
                 var string_out = '<li style="margin:0px;">';
                 if (websites[jdx].length > 0) {
-                    string_out += '<b style="color:#990000;"><a href="' + websites[jdx] + '">' + display_names[jdx] + ':</a> </b>' ;
+                    string_out += '<b style="color:#990000;"><a href="' + websites[jdx] + '">' + display_names[jdx] + '</a></b>' ;
                 } else {
-                    string_out += '<b style="color:#990000;">' + display_names[jdx] + ': </b>' ;
+                    string_out += '<b style="color:#990000;">' + display_names[jdx] + '</b>' ;
                 }
-                string_out += visit_period[jdx];
+                string_out += " (" + visit_period[jdx];
                 if (program_link[jdx].length > 0) {
-                    string_out += ' via <a href="' + program_link[jdx] + '">' + program[jdx] + '</a>. ';
+                    string_out += ' via <a href="' + program_link[jdx] + '">' + program[jdx] + '</a>). ';
                 } else if (program[jdx].length > 0) {
-                    string_out += ' via ' + program[jdx] + '. ';
+                    string_out += ' via ' + program[jdx] + '). ';
                 }
                 else {
-                    string_out += '. ';
-                }
-                //string_out += "PhD Mentor: " + phd_mentor[jdx] + ". ";
-                if (project_deliverable[jdx].length > 0) {
-                    string_out += '<a href="' + project_deliverable[jdx] + '">Project</a>. ';
+                    string_out += '). ';
                 }
                 if (next[jdx].length > 0) {
                     string_out += 'Next: ' + next[jdx] + '. ';
@@ -350,6 +371,8 @@
 
         <div class="col-md-12">
             <h4 style="text-align:left;color:#990000;margin-bottom:20px">Alumni</h4>
+            <h5 style="text-align:left;color:#990000;margin-bottom:20px">PhD Students</h4>
+            <div style="text-align:left;" id="alumni_phd"></div>
             <h5 style="text-align:left;color:#990000;margin-bottom:20px">Undergraduates and Masters Students</h4>
             <div style="text-align:left;" id="alumni_ugms"></div>
             <h5 style="text-align:left;color:#990000;margin-bottom:20px">Visiting Students</h4>
