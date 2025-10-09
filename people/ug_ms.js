@@ -65,7 +65,7 @@ var ug_students = [
         "year": "Junior Undergraduate",
         "program": "CS",
         "ug_websites": "",
-        "photos": "",
+        "photos": "emilywang.png",
         "ug_program": "",
         "phd_mentor": "Abrar Anwar"
     },
@@ -82,20 +82,20 @@ var ug_students = [
     {
         "full_names": "Yusen Luo",
         "display_names": "Yusen Luo",
-        "year": "Junior Undergraduate",
-        "program": "CS",
+        "year": "Visiting Student",
+        "program": "",
         "ug_websites": "",
-        "photos": "",
+        "photos": "yusenluo.png",
         "ug_program": "",
         "phd_mentor": "Abrar Anwar"
     },
     {
         "full_names": "Ryan Lindeborg",
         "display_names": "Ryan Lindeborg",
-        "year": "Junior Undergraduate",
+        "year": "Masters Student",
         "program": "CS",
         "ug_websites": "",
-        "photos": "",
+        "photos": "ryan_lindeborg.png",
         "ug_program": "",
         "phd_mentor": "Abrar Anwar"
     },
@@ -105,7 +105,7 @@ var ug_students = [
         "year": "Junior Undergraduate",
         "program": "CS",
         "ug_websites": "",
-        "photos": "",
+        "photos": "richard_peng.png",
         "ug_program": "",
         "phd_mentor": "Abrar Anwar"
     },        

@@ -68,6 +68,16 @@ var phd_students = [
         "note": "",
         "ws_themes": ["Assistive HRI"],
         "ws": ["5"]
+    },
+    {
+        "full_names": "Dhananjay Ashok",
+        "display_names": "Dhananjay Ashok",
+        "websites": "",
+        "photos": "dj.jpg",
+        "roles": "2<sup>nd</sup> year PhD student",
+        "note": "(co-<a href=\"https://jonmay.github.io/webpage/\">Jon May</a>)",
+        "ws_themes": ["Knowledge Acquisition", "Multimodal Grounding"],
+        "ws": ["3", "3"]
     }
 ]
 

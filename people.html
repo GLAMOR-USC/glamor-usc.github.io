@@ -145,8 +145,11 @@
                 string_out += '<a href="' + ug_websites[jdx] + '" target="_blank"><img src="' + photo + '" class="img-full rounded-start" title="' + full_names[jdx] + '"></a>';
                 string_out += '</div><div class="col-md-8"><div class="card-body">';
                 string_out += '<h5 class="card-title">' + display_names[jdx] + '</h5>';
-                string_out += '<p class="card-text">' + year[jdx] + ", ";
-                string_out += program[jdx] + "<br/>";
+                string_out += '<p class="card-text">' + year[jdx];
+                if (program[jdx].length > 0) {
+                    string_out +=  ", " + program[jdx];
+                }
+                string_out += "<br/>";
                 if (phd_mentor[jdx].length > 0) {
                     string_out += 'PhD Mentor: ' + phd_mentor[jdx] + "</br>";
                 }
@@ -172,7 +175,7 @@
             document.getElementById("alumni_phd").innerHTML += '<ul>'
             for (idx=0; idx < full_names.length; idx++) {
                 jdx = order[idx] - 1;
-                var string_out = '<li style="margin:0px;">';
+                var string_out = '<li style="margin:10px;">';
                 if (websites[jdx].length > 0) {
                     string_out += '<b style="color:#990000;"><a href="' + websites[jdx] + '">' + display_names[jdx] + '</a></b> (' + years[jdx] + ')<br>' ;
                 } else {
