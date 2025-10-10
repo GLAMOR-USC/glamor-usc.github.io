@@ -55,7 +55,7 @@ var ug_students = [
         "year": "Senior Undergraduate",
         "program": "CS",
         "ug_websites": "https://www.linkedin.com/in/mike-gee-583ab5225/",
-        "photos": "",
+        "photos": "mikegee.jpg",
         "ug_program": "",
         "phd_mentor": "Tejas and Abrar"
     },
