@@ -8,14 +8,14 @@ var papers = [
     },
     {
         "paper_title": "PEEK: Guiding and Minimal Image Representations for Zero-Shot Generalization of Robot Manipulation Policies",
-        "authors": "Jesse Zhang, Marius Memmel, Kevin Kim, Dieter Fox, <b>Jesse Thomason</b>, Fabio Ramos, Erdem Biyik, Abhishek Gupta, Anqi Li",
+        "authors": "<b>Jesse Zhang</b>, Marius Memmel, Kevin Kim, Dieter Fox, <b>Jesse Thomason</b>, Fabio Ramos, Erdem Biyik, Abhishek Gupta, Anqi Li",
         "venue": "ICRA 2026",
         "link": '<a href=\"https://arxiv.org/abs/2509.18282\">Paper</a>',
         "year": "2026",
     },
     {
         "paper_title": "HAND Me the Data: Fast Robot Adaptation via Hand Path Retrieval",
-        "authors": "Matthew Hong, Anthony Liang, Kevin Kim, <b>Harshitha Rajaprakash</b>, <b>Jesse Thomason</b>, Erdem Biyik, Jesse Zhang",
+        "authors": "<b>Matthew Hong</b>, Anthony Liang, Kevin Kim, <b>Harshitha Rajaprakash</b>, <b>Jesse Thomason</b>, Erdem Biyik, Jesse Zhang",
         "venue": "ICRA 2026",
         "link": '<a href=\"https://arxiv.org/abs/2505.20455\">Paper</a>',
         "year": "2026",
@@ -43,7 +43,7 @@ var papers = [
     },
     {
         "paper_title": "Words that make SENSE: Sensorimotor Norms in Learned Lexical Token Representations",
-        "authors": "Abhinav Gupta, Toben H. Mintz, <b>Jesse Thomason</b>",
+        "authors": "<b>Abhinav Gupta</b>, Toben H. Mintz, <b>Jesse Thomason</b>",
         "venue": "arXiv Pre-Print",
         "link": '<a href=\"https://arxiv.org/abs/2602.00469\">Paper</a>',
         "year": "Pre-Prints",
@@ -57,7 +57,7 @@ var papers = [
     },
     {
         "paper_title": "Learning to Deliberate: Meta-policy Collaboration for Agentic LLMs with Multi-agent Reinforcement Learning",
-        "authors": "Wei Yang, <b>Jesse Thomason</b>",
+        "authors": "<b>Wei Yang</b>, <b>Jesse Thomason</b>",
         "venue": "AAAI 2026",
         "link": '<a href=\"https://arxiv.org/abs/2509.03817\">Paper</a>',
         "year": "2026",
