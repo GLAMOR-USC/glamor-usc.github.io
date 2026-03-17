@@ -105,25 +105,11 @@ var papers = [
         "year": "Pre-Prints",
     },
     {
-        "paper_title": "HAND Me the Data: Fast Robot Adaptation via Hand Path Retrieval",
-        "authors": "<b>Matthew Hong</b>, Anthony Liang, <b>Kevin Kim</b>, <b>Harshitha Rajaprakash</b>, <b>Jesse Thomason</b>, Erdem Bıyık, <b>Jesse Zhang</b>",
-        "venue": "arXiv Pre-Print",
-        "link": '<a href=\"https://arxiv.org/abs/2505.20455\">Paper</a> / <a href=\"https://liralab.usc.edu/handretrieval/\">Website</a>',
-        "year": "Pre-Prints",
-    },
-    {
         "paper_title": "ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations",
         "authors": "Jiahui Zhang, <b>Yusen Luo</b>, <b>Abrar Anwar</b>, Sumedh Anand Sontakke, Joseph J Lim, <b>Jesse Thomason</b>, Erdem Biyik, <b>Jesse Zhang</b>",
         "venue": "CoRL 2025",
         "link": '<a href=\"https://arxiv.org/abs/2505.10911\">Paper</a> / <a href=\"https://rewind-reward.github.io/\">Website</a>',
         "year": "2025",
-    },
-    {
-        "paper_title": "Adjust for Trust: Mitigating Trust-Induced Inappropriate Reliance on AI Assistance",
-        "authors": "<b>Tejas Srinivasan</b>, <b>Jesse Thomason</b>",
-        "venue": "arXiv Pre-Print",
-        "link": '<a href=\"https://arxiv.org/abs/2502.13321\">Paper</a>',
-        "year": "Pre-Prints",
     },
     {
         "paper_title": "Efficient Evaluation of Multi-Task Robot Policies With Active Experiment Selection",
