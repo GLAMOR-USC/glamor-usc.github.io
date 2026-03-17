@@ -87,7 +87,27 @@ var phd_students = [
         "roles": "2<sup>nd</sup> year PhD student",
         "note": "",
         "ws_themes": ["Agentic LLMs", "Multi-Agent RL"],
-        "ws": ["3", "3"]
+        "ws": ["5", "5"]
+    },
+    {
+        "full_names": "Xinyan Velocity Yu",
+        "display_names": "Xinyan Velocity Yu",
+        "websites": "https://velocitycavalry.github.io",
+        "photos": "velocity.jpeg",
+        "roles": "3<sup>rd</sup> year PhD student",
+        "note": "",
+        "ws_themes": ["Retrieval-augmented Generation", "Multimodal Reasoning and Evaluation"],
+        "ws": ["5", "5"]
+    },
+    {
+        "full_names": "Gabriela Pinto",
+        "display_names": "Gabriela Pinto",
+        "websites": "",
+        "photos": "gabriela.jpeg",
+        "roles": "3<sup>rd</sup> year PhD student",
+        "note": "",
+        "ws_themes": ["LLM Agents"],
+        "ws": ["5", "5"]
     }
 ]
 
