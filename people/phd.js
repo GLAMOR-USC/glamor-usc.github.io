@@ -78,6 +78,16 @@ var phd_students = [
         "note": "(co-<a href=\"https://jonmay.github.io/webpage/\">Jon May</a>)",
         "ws_themes": ["Knowledge Acquisition", "Multimodal Grounding"],
         "ws": ["3", "3"]
+    },
+    {
+        "full_names": "Wei Yang",
+        "display_names": "Wei Yang",
+        "websites": "https://weiyang930.github.io/",
+        "photos": "weiyang.jpg",
+        "roles": "2<sup>nd</sup> year PhD student",
+        "note": "",
+        "ws_themes": ["Agentic LLMs", "Multi-Agent RL"],
+        "ws": ["3", "3"]
     }
 ]
 
