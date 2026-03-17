@@ -109,4 +109,14 @@ var ug_students = [
         "ug_program": "",
         "phd_mentor": "Abrar Anwar"
     },        
+    {
+        "full_names": "Aditeya Prajapati",
+        "display_names": "Aditeya Prajapati",
+        "year": "Masters Student",
+        "program": "CS",
+        "ug_websites": "",
+        "photos": "aditeya.jpg",
+        "ug_program": "",
+        "phd_mentor": "Jesse Thomason"
+    },
 ]

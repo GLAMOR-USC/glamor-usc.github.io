@@ -97,7 +97,7 @@ var phd_students = [
         "roles": "3<sup>rd</sup> year PhD student",
         "note": "",
         "ws_themes": ["Retrieval-augmented Generation", "Multimodal Reasoning and Evaluation"],
-        "ws": ["5", "5"]
+        "ws": ["5", "3"]
     },
     {
         "full_names": "Gabriela Pinto",
@@ -107,7 +107,17 @@ var phd_students = [
         "roles": "3<sup>rd</sup> year PhD student",
         "note": "",
         "ws_themes": ["LLM Agents"],
-        "ws": ["5", "5"]
+        "ws": ["5"]
+    },
+    {
+        "full_names": "Yuliang Cai",
+        "display_names": "Yuliang Cai",
+        "websites": "",
+        "photos": "yuliangcai.jpg",
+        "roles": "4<sup>th</sup> year PhD student",
+        "note": "",
+        "ws_themes": ["Efficient Transfer Learning", "Vision Langauge Model"],
+        "ws": ["5","3"]
     }
 ]
 
