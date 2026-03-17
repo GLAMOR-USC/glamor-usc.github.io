@@ -118,6 +118,26 @@ var phd_students = [
         "note": "",
         "ws_themes": ["Efficient Transfer Learning", "Vision Langauge Model"],
         "ws": ["5","3"]
+    },
+    {
+        "full_names": "Jie Cai",
+        "display_names": "Jie Cai",
+        "websites": "",
+        "photos": "jiecai.jpg",
+        "roles": "2<sup>nd</sup> year PhD student",
+        "note": "",
+        "ws_themes": ["Vision-Language Models", "Mechanistic Interpretability"],
+        "ws": ["3","5"]
+    },
+    {
+        "full_names": "Zizhao(Z) Hu",
+        "display_names": "Zizhao(Z) Hu",
+        "websites": "zizhaohu.com",
+        "photos": "zizhaohu.jpg",
+        "roles": "4<sup>th</sup> year PhD student",
+        "note": "",
+        "ws_themes": ["LLM Memorization", "Synthetic Data"],
+        "ws": ["3","3"]
     }
 ]
 
