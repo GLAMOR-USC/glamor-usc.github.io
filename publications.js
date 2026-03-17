@@ -1,5 +1,54 @@
 var papers = [
     {
+        "paper_title": "PSALM-V: Automating Symbolic Planning in Interactive Visual Environments with Large Language Models",
+        "authors": "<b>Wang Zhu</b>, <b>Miaosen Chai</b>, <b>Ishika Singh</b>, Robin Jia, <b>Jesse Thomason</b>",
+        "venue": "ICRA 2026",
+        "link": '<a href=\"https://arxiv.org/abs/2506.20097\">Paper</a>',
+        "year": "2026",
+    },
+    {
+        "paper_title": "PEEK: Guiding and Minimal Image Representations for Zero-Shot Generalization of Robot Manipulation Policies",
+        "authors": "Jesse Zhang, Marius Memmel, Kevin Kim, Dieter Fox, <b>Jesse Thomason</b>, Fabio Ramos, Erdem Biyik, Abhishek Gupta, Anqi Li",
+        "venue": "ICRA 2026",
+        "link": '<a href=\"https://arxiv.org/abs/2509.18282\">Paper</a>',
+        "year": "2026",
+    },
+    {
+        "paper_title": "HAND Me the Data: Fast Robot Adaptation via Hand Path Retrieval",
+        "authors": "Matthew Hong, Anthony Liang, Kevin Kim, <b>Harshitha Rajaprakash</b>, <b>Jesse Thomason</b>, Erdem Biyik, Jesse Zhang",
+        "venue": "ICRA 2026",
+        "link": '<a href=\"https://arxiv.org/abs/2505.20455\">Paper</a>',
+        "year": "2026",
+    },
+    {
+        "paper_title": "VeriMoA: A Mixture-of-Agents Framework for Spec-to-HDL Generation",
+        "authors": "Heng Ping, Arijit Bhattacharjee, Peiyu Zhang, Shixuan Li, <b>Wei Yang</b>, Anzhe Cheng, Xiaole Zhang, <b>Jesse Thomason</b>, Ali Jannesari, Nesreen Ahmed, Paul Bogdan",
+        "venue": "MLSys 2026",
+        "link": '<a href=\"https://arxiv.org/abs/2510.27617\">Paper</a>',
+        "year": "2026",
+    },
+    {
+        "paper_title": "Adjust for Trust: Mitigating Trust-Induced Inappropriate Reliance on AI Assistance",
+        "authors": "<b>Tejas Srinivasan</b>, <b>Jesse Thomason</b>",
+        "venue": "IUI 2026",
+        "link": '<a href=\"https://arxiv.org/abs/2502.13321\">Paper</a>',
+        "year": "2026",
+    },
+    {
+        "paper_title": "Auditing Multi-Agent LLM Reasoning Trees Outperforms Majority Vote and LLM-as-Judge",
+        "authors": "<b>Wei Yang</b>, Shixuan Li, Heng Ping, Peiyu Zhang, Paul Bogdan, <b>Jesse Thomason</b>",
+        "venue": "arXiv Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2602.09341\">Paper</a>',
+        "year": "Pre-Prints",
+    },
+    {
+        "paper_title": "Words that make SENSE: Sensorimotor Norms in Learned Lexical Token Representations",
+        "authors": "Abhinav Gupta, Toben H. Mintz, <b>Jesse Thomason</b>",
+        "venue": "arXiv Pre-Print",
+        "link": '<a href=\"https://arxiv.org/abs/2602.00469\">Paper</a>',
+        "year": "Pre-Prints",
+    },
+    {
         "paper_title": "Phonological Representation Learning for Isolated Signs Improves Out-of-Vocabulary Generalization",
         "authors": "<b>Lee Kezar</b>, Zed Sevcikova Sehyr, <b>Jesse Thomason</b>",
         "venue": "arXiv Pre-Print",
@@ -9,9 +58,9 @@ var papers = [
     {
         "paper_title": "Learning to Deliberate: Meta-policy Collaboration for Agentic LLMs with Multi-agent Reinforcement Learning",
         "authors": "Wei Yang, <b>Jesse Thomason</b>",
-        "venue": "arXiv Pre-Print",
+        "venue": "AAAI 2026",
         "link": '<a href=\"https://arxiv.org/abs/2509.03817\">Paper</a>',
-        "year": "Pre-Prints",
+        "year": "2026",
     },
     {
         "paper_title": "Large Language Models Do Multi-Label Classification Differently",
@@ -33,13 +82,6 @@ var papers = [
         "venue": "EMNLP 2025",
         "link": '<a href=\"https://arxiv.org/abs/2506.12044\">Paper</a>',
         "year": "2025",
-    },
-    {
-        "paper_title": "PSALM-V: Automating Symbolic Planning in Interactive Visual Environments with Large Language Models",
-        "authors": "<b>Wang Zhu</b>, <b>Miaosen Chai</b>, <b>Ishika Singh</b>, Robin Jia, <b>Jesse Thomason</b>",
-        "venue": "arXiv Pre-Print",
-        "link": '<a href=\"https://arxiv.org/abs/2506.20097\">Paper</a>',
-        "year": "Pre-Prints",
     },
     {
         "paper_title": "Zero-Shot Iterative Formalization and Planning in Partially Observable Environments",
