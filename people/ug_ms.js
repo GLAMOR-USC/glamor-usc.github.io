@@ -118,5 +118,15 @@ var ug_students = [
         "photos": "aditeya.jpg",
         "ug_program": "",
         "phd_mentor": "Jesse Thomason"
-    },
+    },        
+    {
+        "full_names": "Mousumi Das",
+        "display_names": "Mousumi Das",
+        "year": "Masters Student",
+        "program": "ECE",
+        "ug_websites": "",
+        "photos": "mousumi.jpg",
+        "ug_program": "",
+        "phd_mentor": "Jesse Thomason and Abrar Anwar"
+    }
 ]
